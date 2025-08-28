@@ -44,6 +44,7 @@ export default function HimauntikaPage() {
       { role: "Koordinator Pendidikan", name: "Agus Nugrohojati", img: "/images/agus.jpg" },
       { role: "Anggota", name: "Muhammad Ikbaar Agassy", img: "/images/ikbaar.jpg" },
       { role: "Anggota", name: "Wanda Sofiah", img: "/images/wanda.jpg" },
+      { role: "Anggota", name: "Rizki Adnan Halim", img: "/images/wanda.jpg" },
     ],
     kaderisasi: [
       { role: "Koordinator Kaderisasi", name: "Bisri Sulhi", img: "/images/kader1.jpg" },
@@ -96,9 +97,9 @@ export default function HimauntikaPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-purple-900 via-black to-purple-950 text-white">
       {/* Navbar */}
-      <nav className="flex justify-between items-center p-6 bg-black/30 backdrop-blur-md sticky top-0 z-50">
-        <h1 className="text-2xl font-bold text-purple-300">HIMAUNTIKA</h1>
-        <div className="flex gap-6">
+      <nav className="flex flex-wrap justify-between items-center p-4 md:p-6 bg-black/30 backdrop-blur-md sticky top-0 z-50">
+        <h1 className="text-xl md:text-2xl font-bold text-purple-300">HIMAUNTIKA</h1>
+        <div className="flex flex-wrap gap-4 md:gap-6 mt-2 md:mt-0 justify-center">
           {[
             { id: "home", label: "Home" },
             { id: "modules", label: "Modul" },
@@ -108,7 +109,7 @@ export default function HimauntikaPage() {
             <button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className={`relative pb-1 transition-colors duration-300 ${
+              className={`relative pb-1 text-sm md:text-base transition-colors duration-300 ${
                 activeMenu === item.id
                   ? "text-purple-400 font-semibold"
                   : "hover:text-purple-400"
@@ -129,18 +130,18 @@ export default function HimauntikaPage() {
       {/* Hero */}
       <section
         id="home"
-        className="flex flex-col items-center justify-center py-24 text-center"
+        className="flex flex-col items-center justify-center py-16 md:py-24 px-4 text-center"
       >
-        <h2 className="text-4xl font-bold text-purple-300 mb-4">
+        <h2 className="text-2xl md:text-4xl font-bold text-purple-300 mb-4">
           Selamat Datang di Website HIMAUNTIKA
         </h2>
-        <p className="max-w-2xl mb-6">
+        <p className="max-w-2xl mb-6 text-sm md:text-base">
           Wadah mahasiswa Teknik Informatika UNIS untuk belajar, berkembang, dan
           berorganisasi.
         </p>
         <Button
           asChild
-          className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-2xl shadow-lg"
+          className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 md:px-6 md:py-3 rounded-2xl shadow-lg"
         >
           <a
             id="join"
@@ -153,11 +154,11 @@ export default function HimauntikaPage() {
       </section>
 
       {/* Modul */}
-      <section id="modules" className="py-20 px-6">
-        <h3 className="text-3xl font-bold text-center text-purple-300 mb-10">
+      <section id="modules" className="py-16 md:py-20 px-4 md:px-6">
+        <h3 className="text-2xl md:text-3xl font-bold text-center text-purple-300 mb-8 md:mb-10">
           Modul Pembelajaran Teknik Informatika
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {modules.map((mod, idx) => (
             <a
               key={idx}
@@ -166,11 +167,11 @@ export default function HimauntikaPage() {
               rel="noopener noreferrer"
             >
               <Card className="bg-black/40 border border-purple-700 hover:scale-105 transition-transform cursor-pointer">
-                <CardContent className="p-6 text-center">
-                  <h4 className="text-xl font-semibold text-purple-300 mb-2">
+                <CardContent className="p-4 md:p-6 text-center">
+                  <h4 className="text-lg md:text-xl font-semibold text-purple-300 mb-2">
                     {mod.title}
                   </h4>
-                  <p className="text-sm text-gray-300">{mod.desc}</p>
+                  <p className="text-xs md:text-sm text-gray-300">{mod.desc}</p>
                 </CardContent>
               </Card>
             </a>
@@ -179,11 +180,11 @@ export default function HimauntikaPage() {
       </section>
 
       {/* Struktur */}
-      <section id="struktur" className="py-20 px-6">
-        <h3 className="text-3xl font-bold text-center text-purple-300 mb-10">
+      <section id="struktur" className="py-16 md:py-20 px-4 md:px-6">
+        <h3 className="text-2xl md:text-3xl font-bold text-center text-purple-300 mb-8 md:mb-10">
           Struktur Organisasi
         </h3>
-        <div className="flex justify-center gap-4 mb-8">
+        <div className="flex flex-wrap justify-center gap-4 mb-8">
           <Button
             onClick={() => setActiveSection("bph")}
             className="bg-purple-700 hover:bg-purple-800"
@@ -206,7 +207,7 @@ export default function HimauntikaPage() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -50 }}
               transition={{ duration: 0.5 }}
-              className="grid grid-cols-1 md:grid-cols-3 gap-6"
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
             >
               {bph.map((person, idx) => (
                 <Card
@@ -217,12 +218,12 @@ export default function HimauntikaPage() {
                     <img
                       src={person.img}
                       alt={person.name}
-                      className="w-24 h-24 mx-auto rounded-full mb-4 object-cover"
+                      className="w-20 h-20 md:w-24 md:h-24 mx-auto rounded-full mb-4 object-cover"
                     />
-                    <h4 className="text-lg font-semibold text-purple-300">
+                    <h4 className="text-base md:text-lg font-semibold text-purple-300">
                       {person.role}
                     </h4>
-                    <p className="text-sm text-gray-400">{person.name}</p>
+                    <p className="text-xs md:text-sm text-gray-400">{person.name}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -239,16 +240,16 @@ export default function HimauntikaPage() {
               className="flex flex-col gap-6"
             >
               {!activeDivision && (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                   {Object.keys(divisions).map((div) => (
                     <Card
                       key={div}
                       className="bg-black/50 border border-purple-700 p-6 text-center hover:scale-105 transition-transform"
                     >
-                      <h4 className="text-xl font-semibold text-purple-300 mb-4">
+                      <h4 className="text-lg md:text-xl font-semibold text-purple-300 mb-4">
                         {div.charAt(0).toUpperCase() + div.slice(1)}
                       </h4>
-                      <p className="text-gray-400 mb-4">
+                      <p className="text-xs md:text-sm text-gray-400 mb-4">
                         Divisi {div} berfokus pada kegiatan dan pengembangan
                         sesuai bidangnya di HIMAUNTIKA.
                       </p>
@@ -272,9 +273,9 @@ export default function HimauntikaPage() {
                     exit={{ opacity: 0, y: -50 }}
                     transition={{ duration: 0.5 }}
                   >
-                    <Card className="bg-black/60 border border-purple-700 p-6">
-                      <div className="flex justify-between items-center mb-6">
-                        <h4 className="text-2xl font-bold text-purple-300">
+                    <Card className="bg-black/60 border border-purple-700 p-4 md:p-6">
+                      <div className="flex flex-col md:flex-row justify-between items-center mb-6 gap-4">
+                        <h4 className="text-xl md:text-2xl font-bold text-purple-300 text-center md:text-left">
                           Divisi {activeDivision.charAt(0).toUpperCase() + activeDivision.slice(1)}
                         </h4>
                         <Button
@@ -295,12 +296,12 @@ export default function HimauntikaPage() {
                               <img
                                 src={anggota.img}
                                 alt={anggota.name}
-                                className="w-20 h-20 mx-auto rounded-full mb-2 object-cover"
+                                className="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full mb-2 object-cover"
                               />
-                              <h4 className="text-sm font-semibold text-purple-300">
+                              <h4 className="text-sm md:text-base font-semibold text-purple-300">
                                 {anggota.role}
                               </h4>
-                              <p className="text-xs text-gray-300">{anggota.name}</p>
+                              <p className="text-xs md:text-sm text-gray-300">{anggota.name}</p>
                             </CardContent>
                           </Card>
                         ))}
@@ -315,7 +316,7 @@ export default function HimauntikaPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black/30 backdrop-blur-md py-6 text-center text-gray-400">
+      <footer className="bg-black/30 backdrop-blur-md py-6 text-center text-gray-400 text-sm md:text-base">
         <p>© 2025 HIMAUNTIKA - Universitas Islam Syekh Yusuf</p>
       </footer>
     </div>
