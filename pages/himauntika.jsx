@@ -35,7 +35,7 @@ export default function HimauntikaPage() {
   const bph = [
     { role: "Ketua Himpunan", name: "Naza Salsabila Putri", img: "/images/nazaa.jpg" },
     { role: "Sekretaris", name: "Nabila Vidia Putri", img: "/images/nabila.jpg" },
-    { role: "Bendahara", name: "Layyinatus Syifa", img: "/images/sifa.jpg" },
+    { role: "Bendahara", name: "Layyinatus Syifa", img: "/images/sipaa.jpg" },
     { role: "Koor Umum", name: "Lutfi Azami Kusuma", img: "/images/azam.jpg" },
   ];
 
