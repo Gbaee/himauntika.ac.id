@@ -44,7 +44,7 @@ export default function HimauntikaPage() {
       { role: "Koordinator Pendidikan", name: "Agus Nugrohojati", img: "/images/agus.jpg" },
       { role: "Anggota", name: "Muhammad Ikbaar Agassy", img: "/images/ikbaar.jpg" },
       { role: "Anggota", name: "Wanda Sofiah", img: "/images/wanda.jpg" },
-      { role: "Anggota", name: "Rizki Adnan Halim", img: "/images/wanda.jpg" },
+      { role: "Anggota", name: "Rizki Adnan Halim", img: "/images/caplang.jpg" },
     ],
     kaderisasi: [
       { role: "Koordinator Kaderisasi", name: "Bisri Sulhi", img: "/images/kader1.jpg" },
