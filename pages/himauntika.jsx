@@ -47,7 +47,7 @@ export default function HimauntikaPage() {
       { role: "Anggota", name: "Rizki Adnan Halim", img: "/images/caplang.jpg" },
     ],
     kaderisasi: [
-      { role: "Koordinator Kaderisasi", name: "Bisri Sulhi", img: "/images/kader1.jpg" },
+      { role: "Koordinator Kaderisasi", name: "Bisri Sulhi", img: "/images/bisri.jpg" },
       { role: "Anggota", name: "Muhamad Eko Maulana", img: "/images/eko.jpg" },
       { role: "Anggota", name: "Raja Akbar Sanjaini", img: "/images/akbar.jpg" },
       { role: "Anggota", name: "Rulie Pernanda Kesuma", img: "/images/rulie.jpg" },
