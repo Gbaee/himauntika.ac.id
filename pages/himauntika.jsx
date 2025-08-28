@@ -144,7 +144,7 @@ export default function HimauntikaPage() {
         >
           <a
             id="join"
-            href="https://forms.gle/your-google-form-link"
+            href="https://forms.gle/vbDKL518GVq3LMAQA"
             target="_blank"
           >
             Bergabung Sekarang
