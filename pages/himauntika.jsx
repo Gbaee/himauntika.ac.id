@@ -161,7 +161,7 @@ export default function HimauntikaPage() {
               >
                 <CardContent className="p-4 text-center">
                   <img
-                    src={`/images/projek-all${idx}.jpg`}
+                    src={`/images/projekan-foto${idx}.jpg`}
                     alt={`Projek ${idx}`}
                     className="w-full h-40 object-cover rounded-lg mb-3"
                   />
