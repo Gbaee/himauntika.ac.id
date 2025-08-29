@@ -7,6 +7,7 @@ export default function HimauntikaPage() {
   const [activeSection, setActiveSection] = useState("bph");
   const [activeDivision, setActiveDivision] = useState(null);
   const [activeMenu, setActiveMenu] = useState("home");
+  const [showProjectsPage, setShowProjectsPage] = useState(false);
 
   useEffect(() => {
     document.documentElement.style.scrollBehavior = "smooth";
@@ -137,6 +138,49 @@ export default function HimauntikaPage() {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  if (showProjectsPage) {
+    return (
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className="p-6"
+      >
+        <h2 className="text-2xl font-bold mb-6 text-center">
+          Projekan HIMAUNTIKA
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <Card>
+            <CardContent className="p-4">
+              <h3 className="font-semibold text-lg">Projek Website</h3>
+              <p className="text-sm text-gray-600">
+                Pengembangan web profil HIMAUNTIKA.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="p-4">
+              <h3 className="font-semibold text-lg">Projek IoT</h3>
+              <p className="text-sm text-gray-600">
+                Prototype IoT untuk edukasi mahasiswa.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="mt-6 flex justify-center">
+          <Button
+            onClick={() => setShowProjectsPage(false)}
+            className="px-6 py-2 bg-red-500 hover:bg-red-600 text-white rounded-xl shadow"
+          >
+            Keluar
+          </Button>
+        </div>
+      </motion.div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-purple-900 via-black to-purple-950 text-white">
