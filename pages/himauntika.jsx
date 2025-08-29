@@ -405,7 +405,7 @@ export default function HimauntikaPage() {
         </div>
       </section>
 
-            {/* Projekan HIMAUNTIKA */}
+      {/* Projekan HIMAUNTIKA */}
       <section
         id="projekan"
         className="py-16 md:py-20 px-4 md:px-6 bg-black/40"
@@ -438,17 +438,14 @@ export default function HimauntikaPage() {
               . Kami sering membuat projek mulai dari perangkat cerdas sederhana
               hingga sistem otomatisasi yang bermanfaat. Tujuannya bukan hanya
               untuk mengasah keterampilan teknis, tetapi juga membangun budaya
-              kolaborasi, kreativitas, dan inovasi.  
-              <br />
-              <br />
-              Di website ini, kami akan menampilkan dokumentasi foto-foto
-              pengerjaan projek tersebut agar seluruh mahasiswa bisa melihat dan
-              terinspirasi untuk ikut berkontribusi.
+              kolaborasi, kreativitas, dan inovasi.Di website ini, kami akan
+              menampilkan dokumentasi foto-foto pengerjaan projek tersebut agar
+              seluruh mahasiswa bisa melihat dan terinspirasi untuk ikut
+              berkontribusi.
             </p>
           </div>
         </div>
       </section>
-
 
       {/* Footer */}
       <footer className="bg-black/30 backdrop-blur-md py-6 text-center text-gray-400 text-sm md:text-base">
