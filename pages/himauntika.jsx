@@ -405,14 +405,11 @@ export default function HimauntikaPage() {
         </div>
       </section>
 
-      {/* Projekan HIMAUNTIKA */}
-      <section
-        id="projekan"
-        className="py-16 md:py-20 px-4 md:px-6 bg-black/40"
-      >
+       {/* Projekan HIMAUNTIKA */}
+       <section id="projekan" className="py-16 md:py-20 px-4 md:px-6 bg-black/40">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Gambar di kiri */}
-          <div className="flex justify-center order-1 md:order-none">
+          <div className="flex justify-center">
             <img
               src="/images/projekan.jpg" // ganti dengan foto showcase projekan
               alt="Projekan IoT & Robotic"
@@ -438,14 +435,17 @@ export default function HimauntikaPage() {
               . Kami sering membuat projek mulai dari perangkat cerdas sederhana
               hingga sistem otomatisasi yang bermanfaat. Tujuannya bukan hanya
               untuk mengasah keterampilan teknis, tetapi juga membangun budaya
-              kolaborasi, kreativitas, dan inovasi.Di website ini, kami akan
-              menampilkan dokumentasi foto-foto pengerjaan projek tersebut agar
-              seluruh mahasiswa bisa melihat dan terinspirasi untuk ikut
-              berkontribusi.
+              kolaborasi, kreativitas, dan inovasi.  
+              <br />
+              <br />
+              Di website ini, kami akan menampilkan dokumentasi foto-foto
+              pengerjaan projek tersebut agar seluruh mahasiswa bisa melihat dan
+              terinspirasi untuk ikut berkontribusi.
             </p>
           </div>
         </div>
       </section>
+
 
       {/* Footer */}
       <footer className="bg-black/30 backdrop-blur-md py-6 text-center text-gray-400 text-sm md:text-base">
