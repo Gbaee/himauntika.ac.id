@@ -576,6 +576,84 @@ export default function HimauntikaPage() {
         </div>
       </section>
 
+            {/* Event Section */}
+      <section id="events" className="py-16 md:py-20 px-4 md:px-6 bg-black/40">
+        <div className="max-w-6xl mx-auto">
+          <h3 className="text-2xl md:text-3xl font-bold text-purple-300 text-center mb-12">
+            Event & Kegiatan HIMAUNTIKA
+          </h3>
+
+          <div className="relative border-l border-purple-700 pl-6">
+            {[
+              {
+                year: "2024",
+                title: "Makrab 2024",
+                desc: "Malam keakraban untuk menyambut mahasiswa baru dan mempererat hubungan antar anggota.",
+                img: "/images/makrab.jpg",
+              },
+              {
+                year: "2024",
+                title: "Workshop IoT",
+                desc: "Pelatihan langsung tentang Internet of Things dengan perangkat ESP32 dan sensor.",
+                img: "/images/workshop-iot.jpg",
+              },
+              {
+                year: "2024",
+                title: "Seminar AI",
+                desc: "Seminar terbuka mengenai perkembangan Artificial Intelligence dan penerapannya di industri.",
+                img: "/images/seminar-ai.jpg",
+              },
+              {
+                year: "2025",
+                title: "Hackathon Kampus",
+                desc: "Kompetisi coding & inovasi untuk menciptakan solusi teknologi berbasis software maupun IoT.",
+                img: "/images/hackathon.jpg",
+              },
+            ].map((event, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: idx * 0.2 }}
+                className="mb-10 ml-4 relative"
+              >
+                {/* Bullet */}
+                <div className="absolute w-4 h-4 bg-purple-500 rounded-full -left-2 top-2"></div>
+
+                <Card className="bg-black/50 border border-purple-700 hover:scale-[1.02] transition-transform">
+                  <CardContent className="p-6 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                    {/* Text */}
+                    <div>
+                      <span className="text-sm text-gray-400">{event.year}</span>
+                      <h4 className="text-lg md:text-xl font-semibold text-purple-300 mb-2">
+                        {event.title}
+                      </h4>
+                      <p className="text-sm md:text-base text-gray-300 leading-relaxed">
+                        {event.desc}
+                      </p>
+                    </div>
+
+                    {/* Image Placeholder */}
+                    <div className="flex justify-center">
+                      <div className="w-full max-w-sm h-40 bg-gray-800/40 rounded-xl flex items-center justify-center text-gray-500">
+                        <span className="text-xs">(Foto Kegiatan)</span>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Ajakan */}
+          <p className="text-center text-gray-400 mt-12 italic">
+            Event berikutnya bisa jadi tempat kamu mulai cerita di HIMAUNTIKA ✨
+          </p>
+        </div>
+      </section>
+
+
       {/* Footer */}
       <footer className="bg-black/30 backdrop-blur-md py-6 text-center text-gray-400 text-sm md:text-base">
         <p>© 2025 HIMAUNTIKA - Universitas Islam Syekh Yusuf</p>
