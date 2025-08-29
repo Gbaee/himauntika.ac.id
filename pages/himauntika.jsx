@@ -404,66 +404,7 @@ export default function HimauntikaPage() {
           </div>
         </div>
       </section>
-
-            {/* Projek HIMAUNTIKA dengan Gallery */}
-            <section id="projek" className="py-16 md:py-20 px-4 md:px-6 bg-black/50">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          {/* Gallery Media di kiri */}
-          <div className="flex justify-center">
-            <div className="w-full max-w-md">
-              <div className="relative overflow-hidden rounded-2xl shadow-lg">
-                {/* Carousel */}
-                <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-                  {[
-                    "/images/projek-iot.jpg",
-                    "/images/projek-robotik.jpg",
-                    "/images/projek-smart.jpg"
-                  ].map((src, index) => (
-                    <img
-                      key={index}
-                      src={src}
-                      alt={`Projek HIMAUNTIKA ${index + 1}`}
-                      className="w-full object-cover flex-shrink-0"
-                    />
-                  ))}
-                </div>
-                {/* Tombol navigasi */}
-                <button
-                  onClick={() => setCurrentIndex((prev) => (prev === 0 ? 2 : prev - 1))}
-                  className="absolute top-1/2 left-2 -translate-y-1/2 bg-black/40 p-2 rounded-full text-white"
-                >
-                  ◀
-                </button>
-                <button
-                  onClick={() => setCurrentIndex((prev) => (prev === 2 ? 0 : prev + 1))}
-                  className="absolute top-1/2 right-2 -translate-y-1/2 bg-black/40 p-2 rounded-full text-white"
-                >
-                  ▶
-                </button>
-              </div>
-            </div>
-          </div>
-
-          {/* Teks di kanan */}
-          <div>
-            <h3 className="text-2xl md:text-3xl font-bold text-purple-300 mb-6">
-              Projek Kreatif HIMAUNTIKA
-            </h3>
-            <p className="text-sm md:text-base text-gray-300 leading-relaxed text-justify">
-              Di HIMAUNTIKA, kami tidak hanya belajar teori, tetapi juga menciptakan karya nyata.
-              Setiap tahun, anggota kami merancang dan mengembangkan berbagai alat berbasis Internet of Things (IoT)
-              dan robotik. Mulai dari sistem rumah pintar, perangkat monitoring kesehatan, hingga robot sederhana yang
-              bisa membantu kehidupan sehari-hari.
-            </p>
-            <p className="text-sm md:text-base text-gray-300 leading-relaxed text-justify mt-4">
-              Dengan semangat kolaborasi, kami menjadikan ide menjadi prototipe, dan prototipe menjadi inovasi.
-              Ayo ikut dalam perjalanan ini dan buktikan bahwa mahasiswa Teknik Informatika mampu melahirkan
-              teknologi yang bermanfaat untuk masyarakat.
-            </p>
-          </div>
-        </div>
-      </section>
-
+      
       {/* Footer */}
       <footer className="bg-black/30 backdrop-blur-md py-6 text-center text-gray-400 text-sm md:text-base">
         <p>© 2025 HIMAUNTIKA - Universitas Islam Syekh Yusuf</p>
