@@ -162,13 +162,13 @@ export default function HimauntikaPage() {
       src: "/videos/sensor-palang.mp4",
       title: "Prototype palang otomatis",
       desc: "Prototype Palang Otomatis",
-    }, 
+    },
     {
       type: "video",
       src: "/videos/sensor-rfid.mp4",
       title: "Prototype pintu otomatis menggunakan RFID",
       desc: "Prototype Pintu Otomatis Menggunakan RFID",
-    }, 
+    },
     {
       type: "video",
       src: "/videos/sensor-ultrasonik.mp4",
@@ -527,7 +527,7 @@ export default function HimauntikaPage() {
           {/* Gambar di kanan */}
           <div className="flex justify-center">
             <img
-              src="/images/himauntika.jpg" // Ganti nama file sesuai gambar yang kamu simpan di public/images
+              src="/images/struktural.jpg" // Ganti nama file sesuai gambar yang kamu simpan di public/images
               alt="Kenapa HIMAUNTIKA"
               className="rounded-2xl shadow-lg w-full max-w-md object-cover"
             />
@@ -576,7 +576,7 @@ export default function HimauntikaPage() {
         </div>
       </section>
 
-            {/* Event Section */}
+      {/* Event Section */}
       <section id="events" className="py-16 md:py-20 px-4 md:px-6 bg-black/40">
         <div className="max-w-6xl mx-auto">
           <h3 className="text-2xl md:text-3xl font-bold text-purple-300 text-center mb-12">
@@ -586,28 +586,28 @@ export default function HimauntikaPage() {
           <div className="relative border-l border-purple-700 pl-6">
             {[
               {
-                year: "2024",
-                title: "Makrab 2024",
-                desc: "Malam keakraban untuk menyambut mahasiswa baru dan mempererat hubungan antar anggota.",
-                img: "/images/makrab.jpg",
-              },
-              {
-                year: "2024",
-                title: "Workshop IoT",
-                desc: "Pelatihan langsung tentang Internet of Things dengan perangkat ESP32 dan sensor.",
-                img: "/images/workshop-iot.jpg",
-              },
-              {
-                year: "2024",
-                title: "Seminar AI",
-                desc: "Seminar terbuka mengenai perkembangan Artificial Intelligence dan penerapannya di industri.",
-                img: "/images/seminar-ai.jpg",
+                year: "2025",
+                title: "Buka Puasa Bersama 2025",
+                desc: "Buka Puasa Bersama HIMAUNTIKA bukan sekadar makan bareng, tapi juga jadi momen hangat untuk mempererat silaturahmi, berbagi cerita, dan menumbuhkan rasa kebersamaan di antara mahasiswa. Lewat kegiatan ini, kita belajar arti kebersamaan, kepedulian, dan persaudaraan yang sesungguhnya.",
+                img: "/images/buka-puasa.jpg",
               },
               {
                 year: "2025",
-                title: "Hackathon Kampus",
-                desc: "Kompetisi coding & inovasi untuk menciptakan solusi teknologi berbasis software maupun IoT.",
-                img: "/images/hackathon.jpg",
+                title: "Workshop Arduino",
+                desc: "Pelatihan langsung tentang Arduino dan berbagai macam jenis sensor.",
+                img: "/images/workshop.jpg",
+              },
+              {
+                year: "2025",
+                title: "Seminar Go Digital",
+                desc: "Seminar terbuka mengenai perkembangan Artificial Intelligence dan penerapannya di industri.",
+                img: "/images/seminar.jpg",
+              },
+              {
+                year: "2025",
+                title: "Futsal bareng HIMAUNTIKA",
+                desc: "Main futsal bareng HIMAUNTIKA bukan cuma soal ngejar bola, tapi juga ngejar kebersamaan. Lewat sportivitas dan semangat tim, kita belajar kerja sama, saling support, dan pastinya seru-seruan bareng di luar kelas.",
+                img: "/images/futsal.jpg",
               },
             ].map((event, idx) => (
               <motion.div
@@ -625,7 +625,9 @@ export default function HimauntikaPage() {
                   <CardContent className="p-6 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
                     {/* Text */}
                     <div>
-                      <span className="text-sm text-gray-400">{event.year}</span>
+                      <span className="text-sm text-gray-400">
+                        {event.year}
+                      </span>
                       <h4 className="text-lg md:text-xl font-semibold text-purple-300 mb-2">
                         {event.title}
                       </h4>
@@ -652,7 +654,6 @@ export default function HimauntikaPage() {
           </p>
         </div>
       </section>
-
 
       {/* Footer */}
       <footer className="bg-black/30 backdrop-blur-md py-6 text-center text-gray-400 text-sm md:text-base">
