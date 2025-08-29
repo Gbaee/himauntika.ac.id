@@ -405,7 +405,7 @@ export default function HimauntikaPage() {
         </div>
       </section>
 
-            {/* Projekan HIMAUNTIKA */}
+      {/* Projekan Section */}
       <section
         id="projekan"
         className="py-16 md:py-20 px-4 md:px-6 bg-black/40"
@@ -414,7 +414,7 @@ export default function HimauntikaPage() {
           {/* Gambar di kiri */}
           <div className="flex justify-center order-1 md:order-none">
             <img
-              src="/images/projekan.jpg" // ganti dengan foto showcase projekan
+              src="/images/projekan.jpg"
               alt="Projekan IoT & Robotic"
               className="rounded-2xl shadow-lg w-full max-w-md object-cover"
             />
@@ -425,10 +425,7 @@ export default function HimauntikaPage() {
             <h3 className="text-2xl md:text-3xl font-bold text-purple-300 mb-6">
               Projek IoT & Robotic di HIMAUNTIKA
             </h3>
-            <p
-              className="text-sm md:text-base text-gray-300 leading-relaxed"
-              style={{ textAlign: "justify" }}
-            >
+            <p className="text-sm md:text-base text-gray-300 leading-relaxed text-justify">
               HIMAUNTIKA tidak hanya menjadi wadah belajar dan berbagi materi,
               tetapi juga tempat untuk berkarya melalui projek nyata di bidang
               <span className="font-semibold text-purple-300">
@@ -436,16 +433,18 @@ export default function HimauntikaPage() {
                 Internet of Things (IoT) dan Robotics
               </span>
               . Kami sering membuat projek mulai dari perangkat cerdas sederhana
-              hingga sistem otomatisasi yang bermanfaat. Tujuannya bukan hanya
-              untuk mengasah keterampilan teknis, tetapi juga membangun budaya
-              kolaborasi, kreativitas, dan inovasi. Di website ini, kami akan menampilkan dokumentasi foto-foto
-              pengerjaan projek tersebut agar seluruh mahasiswa bisa melihat dan
-              terinspirasi untuk ikut berkontribusi.
+              hingga sistem otomatisasi yang bermanfaat. Dokumentasi lengkap
+              projek ini bisa kamu lihat di halaman khusus.
             </p>
+            <Button
+              onClick={() => setShowProjectsPage(true)}
+              className="mt-6 bg-purple-600 hover:bg-purple-700"
+            >
+              Lihat Selengkapnya
+            </Button>
           </div>
         </div>
       </section>
-
 
       {/* Footer */}
       <footer className="bg-black/30 backdrop-blur-md py-6 text-center text-gray-400 text-sm md:text-base">
