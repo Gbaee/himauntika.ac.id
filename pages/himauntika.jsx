@@ -132,6 +132,27 @@ export default function HimauntikaPage() {
     },
   ];
 
+  const projects = [
+    {
+      type: "image",
+      src: "/images/projekan-foto1.jpg",
+      title: "Projek Website Himauntika",
+      desc: "Pengembangan website resmi HIMAUNTIKA.",
+    },
+    {
+      type: "video",
+      src: "/videos/projekan-robot.mp4",
+      title: "Line Follower Robot",
+      desc: "Robot sederhana berbasis sensor garis.",
+    },
+    {
+      type: "youtube",
+      src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      title: "IoT ESP32 Smart Home",
+      desc: "Demo smart home menggunakan ESP32.",
+    },
+  ];
+
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
@@ -148,29 +169,45 @@ export default function HimauntikaPage() {
             Koleksi Projekan HIMAUNTIKA
           </h2>
           <p className="text-center text-gray-300 mb-10 max-w-2xl mx-auto">
-            Di sini akan ditampilkan kumpulan dokumentasi berupa foto dan video
-            projek yang telah dibuat oleh HIMAUNTIKA.
+            Dokumentasi projek berupa foto, video, maupun demo YouTube.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {/* Contoh card projek, nanti bisa diganti dengan gambar/vidio asli */}
-            {[1, 2, 3, 4, 5, 6].map((idx) => (
+            {projects.map((proj, idx) => (
               <Card
                 key={idx}
                 className="bg-black/40 border border-purple-700 hover:scale-105 transition-transform"
               >
                 <CardContent className="p-4 text-center">
-                  <img
-                    src={`/images/projekan-foto${idx}.jpg`}
-                    alt={`Projek ${idx}`}
-                    className="w-full h-40 object-cover rounded-lg mb-3"
-                  />
+                  {proj.type === "image" && (
+                    <img
+                      src={proj.src}
+                      alt={proj.title}
+                      className="w-full h-40 object-cover rounded-lg mb-3"
+                    />
+                  )}
+                  {proj.type === "video" && (
+                    <video
+                      src={proj.src}
+                      controls
+                      className="w-full h-40 object-cover rounded-lg mb-3"
+                    />
+                  )}
+                  {proj.type === "youtube" && (
+                    <div className="aspect-w-16 aspect-h-9 mb-3">
+                      <iframe
+                        src={proj.src}
+                        title={proj.title}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="w-full h-40 rounded-lg"
+                      ></iframe>
+                    </div>
+                  )}
                   <h4 className="text-sm md:text-base font-semibold text-purple-300">
-                    Projek #{idx}
+                    {proj.title}
                   </h4>
-                  <p className="text-xs text-gray-400">
-                    Dokumentasi singkat tentang projek ke-{idx}.
-                  </p>
+                  <p className="text-xs text-gray-400">{proj.desc}</p>
                 </CardContent>
               </Card>
             ))}
