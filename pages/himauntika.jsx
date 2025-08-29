@@ -142,13 +142,13 @@ export default function HimauntikaPage() {
     {
       type: "image",
       src: "/images/koleksi_2.jpg",
-      title: "Projek Website Himauntika",
+      title: "Projek Himauntika",
       desc: "prototype palang parkir otomatis dan lampu otomatis.",
     },
     {
       type: "image",
       src: "/images/koleksi_3.jpg",
-      title: "Projek Website Himauntika",
+      title: "Projek Himauntika",
       desc: "prototype penyiraman tanah otomatis menggunakan sensor kelembapan.",
     },
     {
@@ -211,7 +211,7 @@ export default function HimauntikaPage() {
             Koleksi Projekan HIMAUNTIKA
           </h2>
           <p className="text-center text-gray-300 mb-10 max-w-2xl mx-auto">
-            Dokumentasi projek berupa foto, video, maupun demo YouTube.
+            Dokumentasi projek sensor dan IoT Himauntika.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
