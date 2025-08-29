@@ -323,7 +323,7 @@ export default function HimauntikaPage() {
             <h3 className="text-2xl md:text-3xl font-bold text-purple-300 mb-6">
               Kenapa HIMAUNTIKA?
             </h3>
-            <p className="text-sm md:text-base text-gray-300 leading-relaxed">
+            <p className="text-sm md:text-base text-gray-300 leading-relaxed text-justify">
               Menjadi mahasiswa bukan hanya soal datang kuliah, mencatat, dan pulang. 
               Di Himpunan Mahasiswa Teknik Informatika UNIS, kamu akan menemukan ruang untuk berkembang lebih jauh, 
               bukan hanya secara akademik tetapi juga dalam berkarya dan berorganisasi. 
