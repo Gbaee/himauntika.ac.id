@@ -161,32 +161,38 @@ export default function HimauntikaPage() {
       type: "video",
       src: "/videos/sensor-palang.mp4",
       title: "Prototype palang otomatis",
-      desc: "Prototype palang otomatis",
+      desc: "Prototype Palang Otomatis",
     }, 
     {
       type: "video",
       src: "/videos/sensor-rfid.mp4",
       title: "Prototype pintu otomatis menggunakan RFID",
-      desc: "Prototype pintu otomatis menggunakan RFID",
+      desc: "Prototype Pintu Otomatis Menggunakan RFID",
     }, 
     {
       type: "video",
       src: "/videos/sensor-ultrasonik.mp4",
-      title: "Prototype Menggunakan Sensor ultrasonik",
-      desc: "Prototype Menggunakan Sensor ultrasonik",
-    }, 
-    {
-      type: "video",
-      src: "/videos/sensor-hujan.mp4",
-      title: "Prototype Menggunakan Sensor Hujan",
-      desc: "Prototype Menggunakan Sensor Hujan",
+      title: "Prototype Menggunakan Sensor Ultrasonik",
+      desc: "Prototype Menggunakan Sensor Ultrasonik",
     },
     {
       type: "video",
-      src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      title: "IoT ESP32 Smart Home",
-      desc: "Demo smart home menggunakan ESP32.",
+      src: "/videos/sensor-kelembapan.mp4",
+      title: "Prototype penyiraman otomatis menggunakan Sensor kelembapan",
+      desc: "Prototype penyiraman otomatis menggunakan Sensor kelembapan",
     },
+    {
+      type: "video",
+      src: "/videos/sensor-suara.mp4",
+      title: "Prototype Menggunakan Sensor Suara",
+      desc: "Prototype Menggunakan Sensor Suara",
+    },
+    // {
+    //   type: "video",
+    //   src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    //   title: "IoT ESP32 Smart Home",
+    //   desc: "Demo smart home menggunakan ESP32.",
+    // },
   ];
 
   const scrollToSection = (id) => {
