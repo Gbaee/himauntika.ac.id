@@ -380,7 +380,7 @@ export default function HimauntikaPage() {
               style={{ textAlign: "justify" }}
             >
               Menjadi mahasiswa bukan hanya soal datang kuliah, mencatat, dan
-              pulang. Di Himpunan Mahasiswa Teknik Informatika UNIS, kamu akan
+              pulang. Di Himpunan Mahasiswa Unis Teknik Informatika, kamu akan
               menemukan ruang untuk berkembang lebih jauh, bukan hanya secara
               akademik tetapi juga dalam berkarya dan berorganisasi. Di sini,
               kita belajar bersama tentang Internet of Things (IoT) dan
