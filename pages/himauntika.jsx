@@ -315,6 +315,38 @@ export default function HimauntikaPage() {
         </AnimatePresence>
       </section>
 
+            {/* Kenapa HIMAUNTIKA */}
+      <section id="kenapa" className="py-16 md:py-20 px-4 md:px-6 bg-black/40">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          {/* Teks di kiri */}
+          <div>
+            <h3 className="text-2xl md:text-3xl font-bold text-purple-300 mb-6">
+              Kenapa HIMAUNTIKA?
+            </h3>
+            <p className="text-sm md:text-base text-gray-300 leading-relaxed">
+              Menjadi mahasiswa bukan hanya soal datang kuliah, mencatat, dan pulang. 
+              Di Himpunan Mahasiswa Teknik Informatika UNIS, kamu akan menemukan ruang untuk berkembang lebih jauh, 
+              bukan hanya secara akademik tetapi juga dalam berkarya dan berorganisasi. 
+              Di sini, kita belajar bersama tentang Internet of Things (IoT) dan Robotics, 
+              berbagi materi perkuliahan agar semakin paham, sekaligus melatih kepemimpinan serta keterampilan organisasi. 
+              Himpunan ini menjadi wadah bagi mahasiswa IT untuk tumbuh, berkolaborasi, dan menjadikan ide-ide besar menjadi nyata. 
+              Bergabunglah dengan kami, karena bersama-sama kita bisa membuktikan bahwa mahasiswa Teknik Informatika UNIS mampu 
+              melahirkan generasi yang kreatif, inovatif, dan siap menghadapi tantangan masa depan.
+            </p>
+          </div>
+
+          {/* Gambar di kanan */}
+          <div className="flex justify-center">
+            <img
+              src="/images/himauntika-benefit.jpg"  // Ganti nama file sesuai gambar yang kamu simpan di public/images
+              alt="Kenapa HIMAUNTIKA"
+              className="rounded-2xl shadow-lg w-full max-w-md object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+
       {/* Footer */}
       <footer className="bg-black/30 backdrop-blur-md py-6 text-center text-gray-400 text-sm md:text-base">
         <p>© 2025 HIMAUNTIKA - Universitas Islam Syekh Yusuf</p>
