@@ -180,7 +180,7 @@ export default function HimauntikaPage() {
       </section>
 
       {/* Struktur */}
-      <section id="struktur" className="py-16 md:py-20 px-4 md:px-6">
+      <section id="struktural" className="py-16 md:py-20 px-4 md:px-6">
         <h3 className="text-2xl md:text-3xl font-bold text-center text-purple-300 mb-8 md:mb-10">
           Struktur Organisasi
         </h3>
