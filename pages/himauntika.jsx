@@ -16,7 +16,7 @@ export default function HimauntikaPage() {
   }, []);
 
   useEffect(() => {
-    const sections = ["home", "modules", "struktur", "join"];
+    const sections = ["home", "modules", "struktural", "join"];
     const handleScroll = () => {
       const scrollPos = window.scrollY + 200;
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -103,8 +103,8 @@ export default function HimauntikaPage() {
           {[
             { id: "home", label: "Home" },
             { id: "modules", label: "Modul" },
-            { id: "struktur", label: "Struktural" },
-            // { id: "join", label: "Bergabung" },
+            { id: "struktural", label: "Struktural" },
+            { id: "join", label: "Bergabung" },
           ].map((item) => (
             <button
               key={item.id}
