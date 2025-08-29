@@ -141,44 +141,50 @@ export default function HimauntikaPage() {
 
   if (showProjectsPage) {
     return (
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        className="p-6"
-      >
-        <h2 className="text-2xl font-bold mb-6 text-center">
-          Projekan HIMAUNTIKA
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <Card>
-            <CardContent className="p-4">
-              <h3 className="font-semibold text-lg">Projek Website</h3>
-              <p className="text-sm text-gray-600">
-                Pengembangan web profil HIMAUNTIKA.
-              </p>
-            </CardContent>
-          </Card>
+      <div className="min-h-screen bg-gradient-to-b from-purple-900 via-black to-purple-950 text-white">
+        <section className="py-16 md:py-20 px-4 md:px-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-purple-300 text-center mb-8">
+            Koleksi Projekan HIMAUNTIKA
+          </h2>
+          <p className="text-center text-gray-300 mb-10 max-w-2xl mx-auto">
+            Di sini akan ditampilkan kumpulan dokumentasi berupa foto dan video
+            projek yang telah dibuat oleh HIMAUNTIKA.
+          </p>
 
-          <Card>
-            <CardContent className="p-4">
-              <h3 className="font-semibold text-lg">Projek IoT</h3>
-              <p className="text-sm text-gray-600">
-                Prototype IoT untuk edukasi mahasiswa.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {/* Contoh card projek, nanti bisa diganti dengan gambar/vidio asli */}
+            {[1, 2, 3, 4, 5, 6].map((idx) => (
+              <Card
+                key={idx}
+                className="bg-black/40 border border-purple-700 hover:scale-105 transition-transform"
+              >
+                <CardContent className="p-4 text-center">
+                  <img
+                    src={`/images/projek${idx}.jpg`}
+                    alt={`Projek ${idx}`}
+                    className="w-full h-40 object-cover rounded-lg mb-3"
+                  />
+                  <h4 className="text-sm md:text-base font-semibold text-purple-300">
+                    Projek #{idx}
+                  </h4>
+                  <p className="text-xs text-gray-400">
+                    Dokumentasi singkat tentang projek ke-{idx}.
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
 
-        <div className="mt-6 flex justify-center">
-          <Button
-            onClick={() => setShowProjectsPage(false)}
-            className="px-6 py-2 bg-red-500 hover:bg-red-600 text-white rounded-xl shadow"
-          >
-            Keluar
-          </Button>
-        </div>
-      </motion.div>
+          <div className="flex justify-center mt-10">
+            <Button
+              onClick={() => setShowProjectsPage(false)}
+              className="bg-red-600 hover:bg-red-700 px-6 py-2"
+            >
+              Keluar
+            </Button>
+          </div>
+        </section>
+      </div>
     );
   }
 
