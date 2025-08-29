@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
+
 
 export default function HimauntikaPage() {
   const [activeSection, setActiveSection] = useState("bph");
@@ -638,9 +640,13 @@ export default function HimauntikaPage() {
 
                     {/* Image Placeholder */}
                     <div className="flex justify-center">
-                      <div className="w-full max-w-sm h-40 bg-gray-800/40 rounded-xl flex items-center justify-center text-gray-500">
-                        <span className="text-xs">(Foto Kegiatan)</span>
-                      </div>
+                      <Image
+                        src={event.img}
+                        alt={event.title}
+                        width={400}
+                        height={200}
+                        className="w-full max-w-sm h-40 object-cover rounded-xl border border-purple-700"
+                      />
                     </div>
                   </CardContent>
                 </Card>
