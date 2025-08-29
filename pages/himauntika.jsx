@@ -139,6 +139,7 @@ export default function HimauntikaPage() {
     }
   };
 
+  //bagian dari section projek
   if (showProjectsPage) {
     return (
       <div className="min-h-screen bg-gradient-to-b from-purple-900 via-black to-purple-950 text-white">
@@ -160,7 +161,7 @@ export default function HimauntikaPage() {
               >
                 <CardContent className="p-4 text-center">
                   <img
-                    src={`/images/projek${idx}.jpg`}
+                    src={`/images/projek-all${idx}.jpg`}
                     alt={`Projek ${idx}`}
                     className="w-full h-40 object-cover rounded-lg mb-3"
                   />
@@ -464,7 +465,7 @@ export default function HimauntikaPage() {
           {/* Gambar di kiri */}
           <div className="flex justify-center order-1 md:order-none">
             <img
-              src="/images/projekan.jpg"
+              src="/images/projekan-foto.jpg"
               alt="Projekan IoT & Robotic"
               className="rounded-2xl shadow-lg w-full max-w-md object-cover"
             />
