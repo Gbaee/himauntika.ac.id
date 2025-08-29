@@ -103,7 +103,7 @@ export default function HimauntikaPage() {
           {[
             { id: "home", label: "Home" },
             { id: "modules", label: "Modul" },
-            { id: "struktural", label: "Struktural" },
+            { id: "struktural", label: "struktural" },
             { id: "join", label: "Bergabung" },
           ].map((item) => (
             <button
