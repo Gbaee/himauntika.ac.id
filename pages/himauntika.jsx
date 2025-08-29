@@ -33,34 +33,78 @@ export default function HimauntikaPage() {
   }, []);
 
   const bph = [
-    { role: "Ketua Himpunan", name: "Naza Salsabila Putri", img: "/images/nazaa.jpg" },
-    { role: "Sekretaris", name: "Nabila Vidia Putri", img: "/images/nabila.jpg" },
+    {
+      role: "Ketua Himpunan",
+      name: "Naza Salsabila Putri",
+      img: "/images/nazaa.jpg",
+    },
+    {
+      role: "Sekretaris",
+      name: "Nabila Vidia Putri",
+      img: "/images/nabila.jpg",
+    },
     { role: "Bendahara", name: "Layyinatus Syifa", img: "/images/sipaa.jpg" },
     { role: "Koor Umum", name: "Lutfi Azami Kusuma", img: "/images/azam.jpg" },
   ];
 
   const divisions = {
     pendidikan: [
-      { role: "Koordinator Pendidikan", name: "Agus Nugrohojati", img: "/images/agus.jpg" },
-      { role: "Anggota", name: "Muhammad Ikbaar Agassy", img: "/images/ikbaar.jpg" },
+      {
+        role: "Koordinator Pendidikan",
+        name: "Agus Nugrohojati",
+        img: "/images/agus.jpg",
+      },
+      {
+        role: "Anggota",
+        name: "Muhammad Ikbaar Agassy",
+        img: "/images/ikbaar.jpg",
+      },
       { role: "Anggota", name: "Wanda Sofiah", img: "/images/wanda.jpg" },
-      { role: "Anggota", name: "Rizki Adnan Halim", img: "/images/caplang.jpg" },
+      {
+        role: "Anggota",
+        name: "Rizki Adnan Halim",
+        img: "/images/caplang.jpg",
+      },
     ],
     kaderisasi: [
-      { role: "Koordinator Kaderisasi", name: "Bisri Sulhi", img: "/images/bisri.jpg" },
+      {
+        role: "Koordinator Kaderisasi",
+        name: "Bisri Sulhi",
+        img: "/images/bisri.jpg",
+      },
       { role: "Anggota", name: "Muhamad Eko Maulana", img: "/images/eko.jpg" },
-      { role: "Anggota", name: "Raja Akbar Sanjaini", img: "/images/akbar.jpg" },
-      { role: "Anggota", name: "Rulie Pernanda Kesuma", img: "/images/rulie.jpg" },
+      {
+        role: "Anggota",
+        name: "Raja Akbar Sanjaini",
+        img: "/images/akbar.jpg",
+      },
+      {
+        role: "Anggota",
+        name: "Rulie Pernanda Kesuma",
+        img: "/images/rulie.jpg",
+      },
       { role: "Anggota", name: "Esai Septiana", img: "/images/essai.jpg" },
     ],
     humas: [
-      { role: "Koordinator Humas", name: "Chantika Haerul Putri", img: "/images/chantika.jpg" },
+      {
+        role: "Koordinator Humas",
+        name: "Chantika Haerul Putri",
+        img: "/images/chantika.jpg",
+      },
       { role: "Anggota", name: "Felix Ando Tokysia", img: "/images/felix.jpg" },
       { role: "Anggota", name: "Nazwa Amelia", img: "/images/amel.jpg" },
     ],
     asset: [
-      { role: "Koordinator Asset & Logistik", name: "Nabihi Ramadhani", img: "/images/nabihi.jpg" },
-      { role: "Anggota", name: "Zamar Balfas Abdullah", img: "/images/balfas.jpg" },
+      {
+        role: "Koordinator Asset & Logistik",
+        name: "Nabihi Ramadhani",
+        img: "/images/nabihi.jpg",
+      },
+      {
+        role: "Anggota",
+        name: "Zamar Balfas Abdullah",
+        img: "/images/balfas.jpg",
+      },
     ],
   };
 
@@ -98,7 +142,9 @@ export default function HimauntikaPage() {
     <div className="min-h-screen bg-gradient-to-b from-purple-900 via-black to-purple-950 text-white">
       {/* Navbar */}
       <nav className="flex flex-wrap justify-between items-center p-4 md:p-6 bg-black/30 backdrop-blur-md sticky top-0 z-50">
-        <h1 className="text-xl md:text-2xl font-bold text-purple-300">HIMAUNTIKA</h1>
+        <h1 className="text-xl md:text-2xl font-bold text-purple-300">
+          HIMAUNTIKA
+        </h1>
         <div className="flex flex-wrap gap-4 md:gap-6 mt-2 md:mt-0 justify-center">
           {[
             { id: "home", label: "Home" },
@@ -223,7 +269,9 @@ export default function HimauntikaPage() {
                     <h4 className="text-base md:text-lg font-semibold text-purple-300">
                       {person.role}
                     </h4>
-                    <p className="text-xs md:text-sm text-gray-400">{person.name}</p>
+                    <p className="text-xs md:text-sm text-gray-400">
+                      {person.name}
+                    </p>
                   </CardContent>
                 </Card>
               ))}
@@ -276,7 +324,9 @@ export default function HimauntikaPage() {
                     <Card className="bg-black/60 border border-purple-700 p-4 md:p-6">
                       <div className="flex flex-col md:flex-row justify-between items-center mb-6 gap-4">
                         <h4 className="text-xl md:text-2xl font-bold text-purple-300 text-center md:text-left">
-                          Divisi {activeDivision.charAt(0).toUpperCase() + activeDivision.slice(1)}
+                          Divisi{" "}
+                          {activeDivision.charAt(0).toUpperCase() +
+                            activeDivision.slice(1)}
                         </h4>
                         <Button
                           onClick={() => setActiveDivision(null)}
@@ -301,7 +351,9 @@ export default function HimauntikaPage() {
                               <h4 className="text-sm md:text-base font-semibold text-purple-300">
                                 {anggota.role}
                               </h4>
-                              <p className="text-xs md:text-sm text-gray-300">{anggota.name}</p>
+                              <p className="text-xs md:text-sm text-gray-300">
+                                {anggota.name}
+                              </p>
                             </CardContent>
                           </Card>
                         ))}
@@ -315,7 +367,7 @@ export default function HimauntikaPage() {
         </AnimatePresence>
       </section>
 
-            {/* Kenapa HIMAUNTIKA */}
+      {/* Kenapa HIMAUNTIKA */}
       <section id="kenapa" className="py-16 md:py-20 px-4 md:px-6 bg-black/40">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Teks di kiri */}
@@ -323,29 +375,35 @@ export default function HimauntikaPage() {
             <h3 className="text-2xl md:text-3xl font-bold text-purple-300 mb-6">
               Kenapa HIMAUNTIKA?
             </h3>
-            <p className="text-sm md:text-base text-gray-300 leading-relaxed text-justify">
-              Menjadi mahasiswa bukan hanya soal datang kuliah, mencatat, dan pulang. 
-              Di Himpunan Mahasiswa Teknik Informatika UNIS, kamu akan menemukan ruang untuk berkembang lebih jauh, 
-              bukan hanya secara akademik tetapi juga dalam berkarya dan berorganisasi. 
-              Di sini, kita belajar bersama tentang Internet of Things (IoT) dan Robotics, 
-              berbagi materi perkuliahan agar semakin paham, sekaligus melatih kepemimpinan serta keterampilan organisasi. 
-              Himpunan ini menjadi wadah bagi mahasiswa IT untuk tumbuh, berkolaborasi, dan menjadikan ide-ide besar menjadi nyata. 
-              Bergabunglah dengan kami, karena bersama-sama kita bisa membuktikan bahwa mahasiswa Teknik Informatika UNIS mampu 
-              melahirkan generasi yang kreatif, inovatif, dan siap menghadapi tantangan masa depan.
+            <p
+              className="text-sm md:text-base text-gray-300 leading-relaxed text-justify"
+              style={{ textAlign: "justify" }}
+            >
+              Menjadi mahasiswa bukan hanya soal datang kuliah, mencatat, dan
+              pulang. Di Himpunan Mahasiswa Teknik Informatika UNIS, kamu akan
+              menemukan ruang untuk berkembang lebih jauh, bukan hanya secara
+              akademik tetapi juga dalam berkarya dan berorganisasi. Di sini,
+              kita belajar bersama tentang Internet of Things (IoT) dan
+              Robotics, berbagi materi perkuliahan agar semakin paham, sekaligus
+              melatih kepemimpinan serta keterampilan organisasi. Himpunan ini
+              menjadi wadah bagi mahasiswa IT untuk tumbuh, berkolaborasi, dan
+              menjadikan ide-ide besar menjadi nyata. Bergabunglah dengan kami,
+              karena bersama-sama kita bisa membuktikan bahwa mahasiswa Teknik
+              Informatika UNIS mampu melahirkan generasi yang kreatif, inovatif,
+              dan siap menghadapi tantangan masa depan.
             </p>
           </div>
 
           {/* Gambar di kanan */}
           <div className="flex justify-center">
             <img
-              src="/images/himauntika-benefit.jpg"  // Ganti nama file sesuai gambar yang kamu simpan di public/images
+              src="/images/himauntika-benefit.jpg" // Ganti nama file sesuai gambar yang kamu simpan di public/images
               alt="Kenapa HIMAUNTIKA"
               className="rounded-2xl shadow-lg w-full max-w-md object-cover"
             />
           </div>
         </div>
       </section>
-
 
       {/* Footer */}
       <footer className="bg-black/30 backdrop-blur-md py-6 text-center text-gray-400 text-sm md:text-base">
