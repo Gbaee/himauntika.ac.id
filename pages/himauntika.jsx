@@ -397,7 +397,7 @@ export default function HimauntikaPage() {
           {/* Gambar di kanan */}
           <div className="flex justify-center">
             <img
-              src="public/images/himauntika all.jpg" // Ganti nama file sesuai gambar yang kamu simpan di public/images
+              src="/images/himauntika.jpg" // Ganti nama file sesuai gambar yang kamu simpan di public/images
               alt="Kenapa HIMAUNTIKA"
               className="rounded-2xl shadow-lg w-full max-w-md object-cover"
             />
