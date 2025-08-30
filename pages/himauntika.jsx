@@ -323,7 +323,7 @@ export default function HimauntikaPage() {
         >
           <a
             id="join"
-            href="https://forms.gle/vbDKL518GVq3LMAQA"
+            href="https://forms.gle/CtR2TTjDATaFiNVb6"
             target="_blank"
           >
             Bergabung Sekarang
