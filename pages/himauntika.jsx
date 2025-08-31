@@ -198,7 +198,7 @@ export default function HimauntikaPage() {
     }
   };
 
-  //bagian dari section projek
+  // bagian dari section projek (popup)
   if (showProjectsPage) {
     return (
       <div className="min-h-screen bg-gradient-to-b from-purple-900 via-black to-purple-950 text-white">
@@ -523,7 +523,7 @@ export default function HimauntikaPage() {
           {/* Gambar di kanan */}
           <div className="flex justify-center">
             <img
-              src="/images/struktural.jpg"
+              src="/images/struktural.jpg" // Ganti nama file sesuai gambar yang kamu simpan di public/images
               alt="Kenapa HIMAUNTIKA"
               className="rounded-2xl shadow-lg w-full max-w-md object-cover"
             />
@@ -531,7 +531,40 @@ export default function HimauntikaPage() {
         </div>
       </section>
 
-      {/* Projekan Section */}
+      {/* ===== TIMELINE CONNECTOR (TAMBAHAN) START =====
+          - Blok ini TIDAK MENGHAPUS apa pun dari projekmu.
+          - Hanya DISISIPKAN di antara Kenapa dan Projekan.
+          - Menampilkan garis tipis di tengah + dua centang biru
+      ===== */}
+      <section
+        id="timeline-connector"
+        aria-hidden="true"
+        className="relative py-8 md:py-12 px-4 md:px-6"
+      >
+        <div className="max-w-6xl mx-auto relative">
+          {/* garis tipis di tengah (panjang menyesuaikan tinggi blok ini) */}
+          <div className="absolute left-1/2 top-0 bottom-0 w-px bg-purple-600/80 -translate-x-1/2" />
+
+          {/* container untuk dua icon: satu mengarah ke Kenapa (atas), satu mengarah ke Projekan (bawah) */}
+          <div className="flex flex-col items-center justify-between h-40 md:h-56 mx-auto">
+            {/* centang untuk Kenapa (atas) */}
+            <div className="bg-black rounded-full border border-purple-700 p-1 shadow-md">
+              <CheckCircle className="w-7 h-7 text-blue-400" />
+            </div>
+
+            {/* sedikit ruang (garis akan terlihat menghubungkan keduanya) */}
+            <div className="w-2/3 h-1" />
+
+            {/* centang untuk Projekan (bawah) */}
+            <div className="bg-black rounded-full border border-purple-700 p-1 shadow-md">
+              <CheckCircle className="w-7 h-7 text-blue-400" />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* ===== TIMELINE CONNECTOR (TAMBAHAN) END ===== */}
+
+      {/* Projekan Section (tetap sama seperti aslinya) */}
       <section
         id="projekan"
         className="py-16 md:py-20 px-4 md:px-6 bg-black/40"
@@ -572,17 +605,14 @@ export default function HimauntikaPage() {
         </div>
       </section>
 
-      {/* ===== TIMELINE BARU (Events) START ===== */}
+      {/* Event Section (dikembalikan ke versi asli, tidak diubah) */}
       <section id="events" className="py-16 md:py-20 px-4 md:px-6 bg-black/40">
         <div className="max-w-6xl mx-auto">
           <h3 className="text-2xl md:text-3xl font-bold text-purple-300 text-center mb-12">
             Event & Kegiatan HIMAUNTIKA
           </h3>
 
-          {/* Garis tipis di tengah */}
-          <div className="relative">
-            <div className="absolute left-1/2 top-0 h-full w-px bg-purple-700/70 -translate-x-1/2 pointer-events-none" />
-
+          <div className="relative border-l border-purple-700 pl-6">
             {[
               {
                 year: "2025",
@@ -613,54 +643,40 @@ export default function HimauntikaPage() {
                 key={idx}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.6, delay: idx * 0.1 }}
-                className="relative md:grid md:grid-cols-2 gap-6 items-center mb-14"
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: idx * 0.2 }}
+                className="mb-10 ml-4 relative"
               >
-                {/* Icon centang biru di tengah */}
-                <div className="absolute left-1/2 -translate-x-1/2 -top-3 md:top-1 z-10">
-                  <div className="bg-black rounded-full border border-purple-700 p-1 shadow">
-                    <CheckCircle className="w-6 h-6 text-blue-400" />
-                  </div>
-                </div>
+                {/* Bullet */}
+                <div className="absolute w-4 h-4 bg-purple-500 rounded-full -left-2 top-2"></div>
 
-                {/* Kartu event – ditempatkan bergantian kiri/kanan */}
-                <div
-                  className={
-                    idx % 2 === 0
-                      ? "md:pr-10"
-                      : "md:order-2 md:pl-10"
-                  }
-                >
-                  <Card className="bg-black/50 border border-purple-700 hover:scale-[1.02] transition-transform">
-                    <CardContent className="p-6 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-                      {/* Text */}
-                      <div className={idx % 2 === 0 ? "md:text-right" : "md:text-left"}>
-                        <span className="text-sm text-gray-400">{event.year}</span>
-                        <h4 className="text-lg md:text-xl font-semibold text-purple-300 mb-2">
-                          {event.title}
-                        </h4>
-                        <p className="text-sm md:text-base text-gray-300 leading-relaxed">
-                          {event.desc}
-                        </p>
-                      </div>
+                <Card className="bg-black/50 border border-purple-700 hover:scale-[1.02] transition-transform">
+                  <CardContent className="p-6 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                    {/* Text */}
+                    <div>
+                      <span className="text-sm text-gray-400">
+                        {event.year}
+                      </span>
+                      <h4 className="text-lg md:text-xl font-semibold text-purple-300 mb-2">
+                        {event.title}
+                      </h4>
+                      <p className="text-sm md:text-base text-gray-300 leading-relaxed">
+                        {event.desc}
+                      </p>
+                    </div>
 
-                      {/* Image */}
-                      <div className="flex justify-center">
-                        <Image
-                          src={event.img}
-                          alt={event.title}
-                          width={400}
-                          height={200}
-                          className="w-full max-w-sm h-40 object-cover rounded-xl border border-purple-700"
-                        />
-                      </div>
-                    </CardContent>
-                  </Card>
-                </div>
-
-                {/* Kolom kosong hanya untuk menjaga grid 2 kolom & alternating */}
-                <div className={idx % 2 === 0 ? "" : "md:order-1"} />
+                    {/* Image Placeholder */}
+                    <div className="flex justify-center">
+                      <Image
+                        src={event.img}
+                        alt={event.title}
+                        width={400}
+                        height={200}
+                        className="w-full max-w-sm h-40 object-cover rounded-xl border border-purple-700"
+                      />
+                    </div>
+                  </CardContent>
+                </Card>
               </motion.div>
             ))}
           </div>
@@ -671,7 +687,6 @@ export default function HimauntikaPage() {
           </p>
         </div>
       </section>
-      {/* ===== TIMELINE BARU (Events) END ===== */}
 
       {/* Footer */}
       <footer className="bg-black/30 backdrop-blur-md py-6 text-center text-gray-400 text-sm md:text-base">
