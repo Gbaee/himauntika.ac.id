@@ -128,8 +128,8 @@ export default function HimauntikaPage() {
       link: "https://www.youtube.com/watch?v=qiQR5rTSshw",
     },
     {
-      title: "Pemrograman Arduino Untunk Pemula",
-      desc: "Pengenalan Arduino Untuk Pemula.",
+      title: "Pemrograman Arduino Untuk Pemula",
+      desc: "Modul Pengenalan Arduino.",
       link: "https://youtu.be/y2umEZuKdhw?si=1vhYfYwhK-XrejSr",
     },
   ];
