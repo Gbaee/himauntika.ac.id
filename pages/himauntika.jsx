@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { CheckCircle } from "lucide-react";
 
 export default function HimauntikaPage() {
   const [activeSection, setActiveSection] = useState("bph");
@@ -536,61 +535,7 @@ export default function HimauntikaPage() {
           </div>
         </div>
       </section>
-
-            {/* Timeline Section */}
-      <section id="timeline" className="relative bg-black/40 py-16 md:py-20 px-4 md:px-6">
-        {/* Garis tipis timeline di tengah */}
-        <div className="absolute left-1/2 top-0 h-full border-l border-purple-500"></div>
-
-        <div className="max-w-6xl mx-auto space-y-20">
-          {/* Item 1 (kiri) */}
-          <div className="relative flex items-center">
-            {/* Icon centang biru di tengah garis */}
-            <div className="absolute left-1/2 -translate-x-1/2 bg-black rounded-full z-10">
-              <CheckCircle className="text-blue-400 w-8 h-8" />
-            </div>
-
-            {/* Konten kiri */}
-            <div className="w-1/2 pr-8 text-right">
-              <h3 className="text-2xl md:text-3xl font-bold text-purple-300 mb-4">
-                Kenapa HIMAUNTIKA?
-              </h3>
-              <p className="text-sm md:text-base text-gray-300 leading-relaxed">
-                Menjadi mahasiswa bukan hanya soal datang kuliah, mencatat, dan pulang.
-                Bergabung di HIMAUNTIKA berarti membuka peluang untuk berkembang,
-                berjejaring, dan menemukan passion di dunia teknologi maupun organisasi.
-              </p>
-            </div>
-
-            {/* Kosong di kanan */}
-            <div className="w-1/2"></div>
-          </div>
-
-          {/* Item 2 (kanan) */}
-          <div className="relative flex items-center">
-            {/* Icon centang biru */}
-            <div className="absolute left-1/2 -translate-x-1/2 bg-black rounded-full z-10">
-              <CheckCircle className="text-blue-400 w-8 h-8" />
-            </div>
-
-            {/* Kosong di kiri */}
-            <div className="w-1/2"></div>
-
-            {/* Konten kanan */}
-            <div className="w-1/2 pl-8 text-left">
-              <h3 className="text-2xl md:text-3xl font-bold text-purple-300 mb-4">
-                Projek Mahasiswa
-              </h3>
-              <p className="text-sm md:text-base text-gray-300 leading-relaxed">
-                Setiap mahasiswa punya kesempatan ikut projek nyata: dari IoT sederhana
-                sampai otomatisasi yang kompleks. Semua jadi wadah belajar langsung di dunia nyata.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
+      
       {/* Projekan Section */}
       <section
         id="projekan"
