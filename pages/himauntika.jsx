@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { CheckCircle } from "lucide-react";
 
 export default function HimauntikaPage() {
   const [activeSection, setActiveSection] = useState("bph");
@@ -189,6 +188,12 @@ export default function HimauntikaPage() {
       title: "Prototype Menggunakan Sensor Suara",
       desc: "Prototype Menggunakan Sensor Suara",
     },
+    // {
+    //   type: "video",
+    //   src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    //   title: "IoT ESP32 Smart Home",
+    //   desc: "Demo smart home menggunakan ESP32.",
+    // },
   ];
 
   const scrollToSection = (id) => {
@@ -198,7 +203,7 @@ export default function HimauntikaPage() {
     }
   };
 
-  // bagian dari section projek (popup)
+  //bagian dari section projek
   if (showProjectsPage) {
     return (
       <div className="min-h-screen bg-gradient-to-b from-purple-900 via-black to-purple-950 text-white">
@@ -530,41 +535,8 @@ export default function HimauntikaPage() {
           </div>
         </div>
       </section>
-
-      {/* ===== TIMELINE CONNECTOR (TAMBAHAN) START =====
-          - Blok ini TIDAK MENGHAPUS apa pun dari projekmu.
-          - Hanya DISISIPKAN di antara Kenapa dan Projekan.
-          - Menampilkan garis tipis di tengah + dua centang biru
-      ===== */}
-      <section
-        id="timeline-connector"
-        aria-hidden="true"
-        className="relative py-8 md:py-12 px-4 md:px-6"
-      >
-        <div className="max-w-6xl mx-auto relative">
-          {/* garis tipis di tengah (panjang menyesuaikan tinggi blok ini) */}
-          <div className="absolute left-1/2 top-0 bottom-0 w-px bg-purple-600/80 -translate-x-1/2" />
-
-          {/* container untuk dua icon: satu mengarah ke Kenapa (atas), satu mengarah ke Projekan (bawah) */}
-          <div className="flex flex-col items-center justify-between h-40 md:h-56 mx-auto">
-            {/* centang untuk Kenapa (atas) */}
-            <div className="bg-black rounded-full border border-purple-700 p-1 shadow-md">
-              <CheckCircle className="w-7 h-7 text-blue-400" />
-            </div>
-
-            {/* sedikit ruang (garis akan terlihat menghubungkan keduanya) */}
-            <div className="w-2/3 h-1" />
-
-            {/* centang untuk Projekan (bawah) */}
-            <div className="bg-black rounded-full border border-purple-700 p-1 shadow-md">
-              <CheckCircle className="w-7 h-7 text-blue-400" />
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* ===== TIMELINE CONNECTOR (TAMBAHAN) END ===== */}
-
-      {/* Projekan Section (tetap sama seperti aslinya) */}
+      
+      {/* Projekan Section */}
       <section
         id="projekan"
         className="py-16 md:py-20 px-4 md:px-6 bg-black/40"
@@ -605,7 +577,7 @@ export default function HimauntikaPage() {
         </div>
       </section>
 
-      {/* Event Section (dikembalikan ke versi asli, tidak diubah) */}
+      {/* Event Section */}
       <section id="events" className="py-16 md:py-20 px-4 md:px-6 bg-black/40">
         <div className="max-w-6xl mx-auto">
           <h3 className="text-2xl md:text-3xl font-bold text-purple-300 text-center mb-12">
