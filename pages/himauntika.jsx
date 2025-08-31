@@ -115,12 +115,12 @@ export default function HimauntikaPage() {
     {
       title: "Belajar Dasar Pemrograman C++",
       desc: "Modul dasar untuk memahami syntax dan struktur C++.",
-      link: "https://www.youtube.com/watch?v=Rub-JsjMhWY",
+      link: "https://youtu.be/r4fZPG5N6tk?si=3tvYq6_AK-eiAyis",
     },
     {
       title: "Pengantar Database MySQL",
       desc: "Dasar-dasar penggunaan MySQL untuk mahasiswa TI.",
-      link: "https://www.geeksforgeeks.org/mysql-tutorial/",
+      link: "https://youtu.be/xYBclb-sYQ4?si=Vq7OOfO4S0fxDTYL",
     },
     {
       title: "Jaringan Komputer untuk Pemula",
@@ -128,9 +128,9 @@ export default function HimauntikaPage() {
       link: "https://www.youtube.com/watch?v=qiQR5rTSshw",
     },
     {
-      title: "Dasar-Dasar IoT dengan ESP32",
-      desc: "Pengenalan Internet of Things menggunakan ESP32.",
-      link: "https://randomnerdtutorials.com/getting-started-with-esp32/",
+      title: "Pemrograman Arduino Untunk Pemula",
+      desc: "Pengenalan Arduino Untuk Pemula.",
+      link: "https://youtu.be/y2umEZuKdhw?si=1vhYfYwhK-XrejSr",
     },
   ];
 
