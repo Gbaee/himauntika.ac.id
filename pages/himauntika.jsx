@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { CheckCheck } from "lucide-react";
 
 // Timeline Wrapper untuk garis tengah + centang biru
 const TimelineWrapper = ({ children }) => {
@@ -517,7 +518,7 @@ export default function HimauntikaPage() {
         >
           {/* Icon centang biru */}
           <div className="absolute left-1/2 transform -translate-x-1/2 -top-4 bg-purple-600 rounded-full w-8 h-8 flex items-center justify-center shadow-lg z-10">
-            <img src="/images/check-blue.png" alt="check" className="w-4 h-4" />
+            <CheckCheck className="w-5 h-5 text-blue-400" strokeWidth={3} />
           </div>
 
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center pt-12">
@@ -565,7 +566,7 @@ export default function HimauntikaPage() {
   >
     {/* Icon centang biru */}
     <div className="absolute left-1/2 transform -translate-x-1/2 -top-4 bg-purple-600 rounded-full w-8 h-8 flex items-center justify-center shadow-lg z-10">
-      <img src="/images/check-blue.png" alt="check" className="w-4 h-4" />
+      <CheckCheck className="w-5 h-5 text-blue-400" strokeWidth={3} />
     </div>
 
     <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center pt-12">
