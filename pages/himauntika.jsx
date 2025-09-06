@@ -4,6 +4,17 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
+// Timeline Wrapper untuk garis tengah + centang biru
+const TimelineWrapper = ({ children }) => {
+  return (
+    <div className="relative">
+      {/* Garis vertikal */}
+      <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-purple-700"></div>
+      {children}
+    </div>
+  );
+};
+
 export default function HimauntikaPage() {
   const [activeSection, setActiveSection] = useState("bph");
   const [activeDivision, setActiveDivision] = useState(null);
@@ -499,17 +510,26 @@ export default function HimauntikaPage() {
       </section>
 
       {/* Kenapa HIMAUNTIKA */}
-      <section id="kenapa" className="py-16 md:py-20 px-4 md:px-6 bg-black/40">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          {/* Teks di kiri */}
-          <div>
-            <h3 className="text-2xl md:text-3xl font-bold text-purple-300 mb-6">
-              Kenapa HIMAUNTIKA?
-            </h3>
-            <p
-              className="text-sm md:text-base text-gray-300 leading-relaxed text-justify"
-              style={{ textAlign: "justify" }}
-            >
+      <TimelineWrapper>
+        <section
+          id="kenapa"
+          className="py-16 md:py-20 px-4 md:px-6 bg-black/40 relative"
+        >
+          {/* Icon centang biru */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 -top-4 bg-purple-600 rounded-full w-8 h-8 flex items-center justify-center shadow-lg z-10">
+            <img src="/images/check-blue.png" alt="check" className="w-4 h-4" />
+          </div>
+
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center pt-12">
+            {/* Bagian teks */}
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold text-purple-300 mb-6">
+                Kenapa HIMAUNTIKA?
+              </h3>
+              <p
+                className="text-sm md:text-base text-gray-300 leading-relaxed text-justify"
+                style={{ textAlign: "justify" }}
+              >
               Menjadi mahasiswa bukan hanya soal datang kuliah, mencatat, dan
               pulang. Di Himpunan Mahasiswa Unis Teknik Informatika, kamu akan
               menemukan ruang untuk berkembang lebih jauh, bukan hanya secara
@@ -522,37 +542,44 @@ export default function HimauntikaPage() {
               karena bersama-sama kita bisa membuktikan bahwa mahasiswa Teknik
               Informatika UNIS mampu melahirkan generasi yang kreatif, inovatif,
               dan siap menghadapi tantangan masa depan.
-            </p>
-          </div>
+              </p>
+            </div>
 
-          {/* Gambar di kanan */}
-          <div className="flex justify-center">
-            <img
-              src="/images/struktural.jpg" // Ganti nama file sesuai gambar yang kamu simpan di public/images
-              alt="Kenapa HIMAUNTIKA"
-              className="rounded-2xl shadow-lg w-full max-w-md object-cover"
-            />
+            {/* Bagian gambar */}
+            <div className="flex justify-center">
+              <img
+                src="/images/struktural.jpg"
+                alt="Kenapa HIMAUNTIKA"
+                className="rounded-2xl shadow-lg w-full max-w-md object-cover"
+              />
+            </div>
           </div>
-        </div>
-      </section>
-      
+        </section>
+      </TimelineWrapper>
+
       {/* Projekan Section */}
-      <section
-        id="projekan"
-        className="py-16 md:py-20 px-4 md:px-6 bg-black/40"
-      >
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          {/* Gambar di kiri */}
-          <div className="flex justify-center order-1 md:order-none">
-            <img
-              src="/images/projekan-foto.jpg"
-              alt="Projekan IoT & Robotic"
-              className="rounded-2xl shadow-lg w-full max-w-md object-cover"
-            />
-          </div>
+<TimelineWrapper>
+  <section
+    id="projekan"
+    className="py-16 md:py-20 px-4 md:px-6 bg-black/40 relative"
+  >
+    {/* Icon centang biru */}
+    <div className="absolute left-1/2 transform -translate-x-1/2 -top-4 bg-purple-600 rounded-full w-8 h-8 flex items-center justify-center shadow-lg z-10">
+      <img src="/images/check-blue.png" alt="check" className="w-4 h-4" />
+    </div>
 
-          {/* Teks di kanan */}
-          <div>
+    <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center pt-12">
+      {/* Bagian gambar */}
+      <div className="flex justify-center order-1 md:order-none">
+        <img
+          src="/images/projekan-foto.jpg"
+          alt="Projekan IoT & Robotic"
+          className="rounded-2xl shadow-lg w-full max-w-md object-cover"
+        />
+      </div>
+
+      {/* Bagian teks */}
+      <div>
             <h3 className="text-2xl md:text-3xl font-bold text-purple-300 mb-6">
               Projek IoT & Robotic di HIMAUNTIKA
             </h3>
@@ -574,8 +601,11 @@ export default function HimauntikaPage() {
               Lihat Selengkapnya
             </Button>
           </div>
-        </div>
-      </section>
+
+    </div>
+  </section>
+</TimelineWrapper>
+
 
       {/* Event Section */}
       <section id="events" className="py-16 md:py-20 px-4 md:px-6 bg-black/40">
