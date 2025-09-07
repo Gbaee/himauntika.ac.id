@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { CheckCheck } from "lucide-react";
 import { Sparkles, Target } from "lucide-react";
-import TimelineWrapper from "@/components/TimelineWrapper";
+import TimelineWrapper from "@/components/ui/TimelineWrapper";
 
 // Timeline Wrapper untuk garis tengah + centang biru
 const TimelineWrapper = ({ children }) => {
