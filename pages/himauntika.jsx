@@ -480,8 +480,6 @@ export default function HimauntikaPage() {
         </div>
       </section>
 
-      <VisiMisiSection />
-
       {/* Struktur */}
       <section id="struktural" className="py-16 md:py-20 px-4 md:px-6">
         <h3 className="text-2xl md:text-3xl font-bold text-center text-purple-300 mb-8 md:mb-10">
@@ -803,6 +801,8 @@ export default function HimauntikaPage() {
           </p>
         </div>
       </section>
+
+      <VisiMisiSection />
 
       {/* Footer */}
       <footer className="bg-black/30 backdrop-blur-md py-6 text-center text-gray-400 text-sm md:text-base">
