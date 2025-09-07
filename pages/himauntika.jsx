@@ -647,16 +647,7 @@ export default function HimauntikaPage() {
                 Menjadi mahasiswa bukan hanya soal datang kuliah, mencatat, dan
                 pulang. Di Himpunan Mahasiswa Unis Teknik Informatika, kamu akan
                 menemukan ruang untuk berkembang lebih jauh, bukan hanya secara
-                akademik tetapi juga dalam berkarya dan berorganisasi. Di sini,
-                kita belajar bersama tentang Internet of Things (IoT) dan
-                Robotics, berbagi materi perkuliahan agar semakin paham,
-                sekaligus melatih kepemimpinan serta keterampilan organisasi.
-                Himpunan ini menjadi wadah bagi mahasiswa IT untuk tumbuh,
-                berkolaborasi, dan menjadikan ide-ide besar menjadi nyata.
-                Bergabunglah dengan kami, karena bersama-sama kita bisa
-                membuktikan bahwa mahasiswa Teknik Informatika UNIS mampu
-                melahirkan generasi yang kreatif, inovatif, dan siap menghadapi
-                tantangan masa depan.
+                akademik tetapi juga dalam berkarya dan berorganisasi...
               </p>
             </div>
 
