@@ -7,17 +7,6 @@ import { CheckCheck } from "lucide-react";
 import { Sparkles, Target } from "lucide-react";
 import TimelineWrapper from "@/components/ui/TimelineWrapper";
 
-// Timeline Wrapper untuk garis tengah + centang biru
-const TimelineWrapper = ({ children }) => {
-  return (
-    <div className="relative">
-      {/* Garis vertikal */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-purple-700"></div>
-      {children}
-    </div>
-  );
-};
-
 // Komponen Visi & Misi
 function VisiMisiSection() {
   return (
