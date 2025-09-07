@@ -623,34 +623,26 @@ export default function HimauntikaPage() {
           id="kenapa"
           className="py-16 md:py-20 px-4 md:px-6 bg-black/40 relative"
         >
-          {/* Icon centang biru */}
-          {/* <div className="absolute left-1/2 transform -translate-x-1/2 -top-4 bg-purple-600 rounded-full w-8 h-8 flex items-center justify-center shadow-lg z-10">
-            <CheckCheck className="w-5 h-5 text-blue-400" strokeWidth={3} />
-          </div> */}
-
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center pt-12">
             {/* Bagian teks */}
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold text-purple-300 mb-6">
-                Kenapa HIMAUNTIKA?
-              </h3>
-              <p
-                className="text-sm md:text-base text-gray-300 leading-relaxed text-justify"
-                style={{ textAlign: "justify" }}
-              >
+              <div className="flex items-center gap-3 mb-6">
+                <div className="bg-purple-600 rounded-full w-10 h-10 flex items-center justify-center shadow-lg overflow-hidden">
+                  <img
+                    src="/images/centang biru.jpg"
+                    alt="check"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-2xl md:text-3xl font-bold text-purple-300">
+                  Kenapa HIMAUNTIKA?
+                </h3>
+              </div>
+              <p className="text-sm md:text-base text-gray-300 leading-relaxed text-justify">
                 Menjadi mahasiswa bukan hanya soal datang kuliah, mencatat, dan
                 pulang. Di Himpunan Mahasiswa Unis Teknik Informatika, kamu akan
                 menemukan ruang untuk berkembang lebih jauh, bukan hanya secara
-                akademik tetapi juga dalam berkarya dan berorganisasi. Di sini,
-                kita belajar bersama tentang Internet of Things (IoT) dan
-                Robotics, berbagi materi perkuliahan agar semakin paham,
-                sekaligus melatih kepemimpinan serta keterampilan organisasi.
-                Himpunan ini menjadi wadah bagi mahasiswa IT untuk tumbuh,
-                berkolaborasi, dan menjadikan ide-ide besar menjadi nyata.
-                Bergabunglah dengan kami, karena bersama-sama kita bisa
-                membuktikan bahwa mahasiswa Teknik Informatika UNIS mampu
-                melahirkan generasi yang kreatif, inovatif, dan siap menghadapi
-                tantangan masa depan.
+                akademik tetapi juga dalam berkarya dan berorganisasi...
               </p>
             </div>
 
