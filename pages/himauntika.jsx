@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { CheckCheck } from "lucide-react";
 import { Sparkles, Target } from "lucide-react";
+import TimelineWrapper from "@/components/TimelineWrapper";
 
 // Timeline Wrapper untuk garis tengah + centang biru
 const TimelineWrapper = ({ children }) => {
@@ -634,9 +635,9 @@ export default function HimauntikaPage() {
           className="py-16 md:py-20 px-4 md:px-6 bg-black/40 relative"
         >
           {/* Icon centang biru */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 -top-4 bg-purple-600 rounded-full w-8 h-8 flex items-center justify-center shadow-lg z-10">
+          {/* <div className="absolute left-1/2 transform -translate-x-1/2 -top-4 bg-purple-600 rounded-full w-8 h-8 flex items-center justify-center shadow-lg z-10">
             <CheckCheck className="w-5 h-5 text-blue-400" strokeWidth={3} />
-          </div>
+          </div> */}
 
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center pt-12">
             {/* Bagian teks */}
@@ -683,9 +684,9 @@ export default function HimauntikaPage() {
           className="py-16 md:py-20 px-4 md:px-6 bg-black/40 relative"
         >
           {/* Icon centang biru */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 -top-4 bg-purple-600 rounded-full w-8 h-8 flex items-center justify-center shadow-lg z-10">
+          {/* <div className="absolute left-1/2 transform -translate-x-1/2 -top-4 bg-purple-600 rounded-full w-8 h-8 flex items-center justify-center shadow-lg z-10">
             <CheckCheck className="w-5 h-5 text-blue-400" strokeWidth={3} />
-          </div>
+          </div> */}
 
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center pt-12">
             {/* Bagian gambar */}
