@@ -690,50 +690,75 @@ export default function HimauntikaPage() {
         </div>
       </section>
 
-            {/* Visi & Misi Section */}
-        <section
-          id="visi-misi"
-          className="py-16 md:py-20 px-4 md:px-6 bg-black/40 relative"
-        >
+      {/* Visi & Misi Section */}
+      <section
+        id="visi-misi"
+        className="py-16 md:py-20 px-4 md:px-6 bg-black/40 relative"
+      >
+        <h3 className="text-2xl md:text-3xl font-bold text-purple-300 text-center mb-12">
+          Visi & Misi HIMAUNTIKA
+        </h3>
 
-          <h3 className="text-2xl md:text-3xl font-bold text-purple-300 text-center mb-12">
-            Visi & Misi HIMAUNTIKA
-          </h3>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Card Visi */}
+          <Card className="bg-black/50 border border-purple-700 hover:scale-[1.02] transition-transform shadow-lg">
+            <CardContent className="p-6 md:p-8 text-center md:text-left">
+              <h4 className="text-xl md:text-2xl font-bold text-purple-300 mb-4">
+                Visi
+              </h4>
+              <p className="text-sm md:text-base text-gray-300 leading-relaxed">
+                Meningkatkan kualitas dan kreatifitas mahasiswa khususnya dalam
+                bidang akademik Teknik Informatika guna memajukan sistem
+                komputerisasi di UNIS Tangerang, serta menanamkan jiwa
+                persaudaraan yang dilandaskan dengan iman dan takwa dikalangan
+                mahasiswa Teknik Informatika guna melahirkan mahasiswa yang
+                unggul demi memajukan Program Studi Teknik Informatika UNIS
+                Tangerang agar lebih di kenal oleh masyarakat luas.
+              </p>
+            </CardContent>
+          </Card>
 
-          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Card Visi */}
-            <Card className="bg-black/50 border border-purple-700 hover:scale-[1.02] transition-transform shadow-lg">
-              <CardContent className="p-6 md:p-8 text-center md:text-left">
-                <h4 className="text-xl md:text-2xl font-bold text-purple-300 mb-4">
-                  Visi
-                </h4>
-                <p className="text-sm md:text-base text-gray-300 leading-relaxed">
-                  Menjadi wadah pengembangan mahasiswa Teknik Informatika UNIS
-                  yang berintegritas, inovatif, serta mampu berkontribusi dalam
-                  bidang teknologi dan masyarakat. HIMAUNTIKA berkomitmen untuk
-                  membentuk generasi yang cerdas, adaptif, dan siap menghadapi
-                  tantangan era digital.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Card Misi */}
-            <Card className="bg-black/50 border border-purple-700 hover:scale-[1.02] transition-transform shadow-lg">
-              <CardContent className="p-6 md:p-8 text-center md:text-left">
-                <h4 className="text-xl md:text-2xl font-bold text-purple-300 mb-4">
-                  Misi
-                </h4>
-                <ul className="list-disc list-inside text-sm md:text-base text-gray-300 space-y-2 text-left">
-                  <li>Mengembangkan potensi akademik dan non-akademik mahasiswa Teknik Informatika.</li>
-                  <li>Mendorong budaya riset, inovasi, dan implementasi teknologi.</li>
-                  <li>Menciptakan lingkungan organisasi yang inklusif, solid, dan berkolaborasi.</li>
-                  <li>Mengadakan kegiatan edukatif, sosial, dan kreatif yang bermanfaat bagi mahasiswa maupun masyarakat.</li>
-                  <li>Menjadi jembatan aspirasi mahasiswa untuk kemajuan prodi Teknik Informatika UNIS.</li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
+          {/* Card Misi */}
+          <Card className="bg-black/50 border border-purple-700 hover:scale-[1.02] transition-transform shadow-lg">
+            <CardContent className="p-6 md:p-8 text-center md:text-left">
+              <h4 className="text-xl md:text-2xl font-bold text-purple-300 mb-4">
+                Misi
+              </h4>
+              <ul className="list-disc list-inside text-sm md:text-base text-gray-300 space-y-2 text-left">
+                <li>
+                  1.Membantu kemajuan sistem komputerisasi Fakultas Teknik
+                  Program Studi Informatika di UNIS Tangerang
+                </li>
+                <li>
+                  2.Membangkitkan mental dan kemampuan terpendam yang dimiliki
+                  mahasiswa Teknik Informatika guna membangun mereka, agar
+                  menjadi pribadi yang mandiri.
+                </li>
+                <li>
+                  3.Menyelenggarakan perkumpulan belajar dalam bidang akademik
+                  Program Studi Teknik Informatika guna menciptakan Mahasiswa
+                  Teknik Informatika yang cerdas.
+                </li>
+                <li>
+                  4.Menyiapkan sumber daya manusia yang berkualitas di bidang
+                  teknologi informatika.
+                </li>
+                <li>
+                  5.Menghasilkan generasi muda yang terampil, berkualitas,
+                  mandiri dan berwawasan luas.
+                </li>
+                <li>
+                  6.Membuat program yang sesuai dengan identitas dan azas
+                  organisasi serta berguna untuk mencapai tujuan untuk
+                  menciptakan mahasiswa dan mahasiswi Program Studi Teknik
+                  Informatika yang dapat berkreatifitas dalam bidang akademik
+                  Teknik informatika.
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="bg-black/30 backdrop-blur-md py-6 text-center text-gray-400 text-sm md:text-base">
