@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { CheckCheck } from "lucide-react";
+import { Sparkles, Target } from "lucide-react";
 
 // Timeline Wrapper untuk garis tengah + centang biru
 const TimelineWrapper = ({ children }) => {
@@ -15,6 +16,116 @@ const TimelineWrapper = ({ children }) => {
     </div>
   );
 };
+
+// Komponen Visi & Misi
+function VisiMisiSection() {
+  return (
+    <section
+      id="visi-misi"
+      className="relative py-20 px-4 md:px-6 bg-gradient-to-b from-purple-950 via-black to-purple-900 overflow-hidden"
+    >
+      {/* Efek background animasi */}
+      <div className="absolute inset-0">
+        <div className="absolute -top-20 -left-20 w-72 h-72 bg-purple-600/30 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-0 right-0 w-80 h-80 bg-purple-400/20 rounded-full blur-3xl animate-pulse delay-300" />
+      </div>
+
+      {/* Heading */}
+      <motion.h3
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="relative text-3xl md:text-4xl font-extrabold text-purple-300 text-center mb-14 drop-shadow-lg"
+      >
+        ✨ Visi & Misi HIMAUNTIKA ✨
+      </motion.h3>
+
+      {/* Grid Visi & Misi */}
+      <div className="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
+        {/* Card Visi */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+          className="flex"
+        >
+          <Card className="flex flex-col justify-between bg-gradient-to-br from-purple-800/70 to-black/50 border border-purple-600 rounded-3xl shadow-2xl hover:shadow-purple-500/40 transition-all duration-500 hover:scale-[1.03] w-full">
+            <CardContent className="p-8 flex flex-col h-full">
+              <div className="flex items-center gap-3 mb-6">
+                <Sparkles className="w-7 h-7 text-yellow-300 animate-pulse" />
+                <h4 className="text-2xl font-bold text-purple-200">Visi</h4>
+              </div>
+              <p className="text-gray-300 leading-relaxed text-justify flex-grow">
+                Meningkatkan kualitas dan kreatifitas mahasiswa khususnya dalam
+                bidang akademik Teknik Informatika guna memajukan sistem
+                komputerisasi di UNIS Tangerang, serta menanamkan jiwa
+                persaudaraan yang dilandaskan dengan iman dan takwa dikalangan
+                mahasiswa Teknik Informatika guna melahirkan mahasiswa yang
+                unggul demi memajukan Program Studi Teknik Informatika UNIS
+                Tangerang agar lebih dikenal oleh masyarakat luas.
+              </p>
+              <div className="mt-6 h-10" />
+            </CardContent>
+          </Card>
+        </motion.div>
+
+        {/* Card Misi */}
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+          className="flex"
+        >
+          <Card className="flex flex-col justify-between bg-gradient-to-bl from-purple-800/70 to-black/50 border border-purple-600 rounded-3xl shadow-2xl hover:shadow-purple-500/40 transition-all duration-500 hover:scale-[1.03] w-full">
+            <CardContent className="p-8 flex flex-col h-full">
+              <div className="flex items-center gap-3 mb-6">
+                <Target className="w-7 h-7 text-red-400 animate-pulse" />
+                <h4 className="text-2xl font-bold text-purple-200">Misi</h4>
+              </div>
+              <ul className="list-disc list-inside text-gray-300 space-y-3 flex-grow">
+                <li>
+                  Membantu kemajuan sistem komputerisasi Fakultas Teknik Program
+                  Studi Informatika di UNIS Tangerang.
+                </li>
+                <li>
+                  Membangkitkan mental dan kemampuan terpendam yang dimiliki
+                  mahasiswa Teknik Informatika agar menjadi pribadi mandiri.
+                </li>
+                <li>
+                  Menyelenggarakan perkumpulan belajar akademik untuk
+                  menciptakan Mahasiswa Informatika yang cerdas.
+                </li>
+                <li>
+                  Menyiapkan sumber daya manusia berkualitas di bidang teknologi
+                  informatika.
+                </li>
+                <li>
+                  Menghasilkan generasi muda yang terampil, mandiri, dan
+                  berwawasan luas.
+                </li>
+                <li>
+                  Membuat program sesuai identitas organisasi untuk menciptakan
+                  mahasiswa kreatif di bidang akademik.
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </motion.div>
+      </div>
+
+      {/* Decorative sparkles */}
+      <div className="absolute top-10 left-10 animate-bounce text-purple-400 text-2xl">
+        ✦
+      </div>
+      <div className="absolute bottom-10 right-10 animate-bounce delay-300 text-purple-500 text-2xl">
+        ✦
+      </div>
+    </section>
+  );
+}
 
 export default function HimauntikaPage() {
   const [activeSection, setActiveSection] = useState("bph");
@@ -292,7 +403,8 @@ export default function HimauntikaPage() {
           {[
             { id: "home", label: "Home" },
             { id: "modules", label: "Modul" },
-            { id: "struktural", label: "struktural" },
+            { id: "visi-misi", label: "Visi & Misi" }, 
+            { id: "struktural", label: "Struktural" },
             { id: "join", label: "Bergabung" },
           ].map((item) => (
             <button
@@ -367,6 +479,8 @@ export default function HimauntikaPage() {
           ))}
         </div>
       </section>
+
+      <VisiMisiSection />
 
       {/* Struktur */}
       <section id="struktural" className="py-16 md:py-20 px-4 md:px-6">
@@ -687,76 +801,6 @@ export default function HimauntikaPage() {
           <p className="text-center text-gray-400 mt-12 italic">
             Event berikutnya bisa jadi tempat kamu mulai cerita di HIMAUNTIKA ✨
           </p>
-        </div>
-      </section>
-
-      {/* Visi & Misi Section */}
-      <section
-        id="visi-misi"
-        className="py-16 md:py-20 px-4 md:px-6 bg-black/40 relative"
-      >
-        <h3 className="text-2xl md:text-3xl font-bold text-purple-300 text-center mb-12">
-          Visi & Misi HIMAUNTIKA
-        </h3>
-
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Card Visi */}
-          <Card className="bg-black/50 border border-purple-700 hover:scale-[1.02] transition-transform shadow-lg">
-            <CardContent className="p-6 md:p-8 text-center md:text-left">
-              <h4 className="text-xl md:text-2xl font-bold text-purple-300 mb-4">
-                Visi
-              </h4>
-              <p className="text-sm md:text-base text-gray-300 leading-relaxed">
-                Meningkatkan kualitas dan kreatifitas mahasiswa khususnya dalam
-                bidang akademik Teknik Informatika guna memajukan sistem
-                komputerisasi di UNIS Tangerang, serta menanamkan jiwa
-                persaudaraan yang dilandaskan dengan iman dan takwa dikalangan
-                mahasiswa Teknik Informatika guna melahirkan mahasiswa yang
-                unggul demi memajukan Program Studi Teknik Informatika UNIS
-                Tangerang agar lebih di kenal oleh masyarakat luas.
-              </p>
-            </CardContent>
-          </Card>
-
-          {/* Card Misi */}
-          <Card className="bg-black/50 border border-purple-700 hover:scale-[1.02] transition-transform shadow-lg">
-            <CardContent className="p-6 md:p-8 text-center md:text-left">
-              <h4 className="text-xl md:text-2xl font-bold text-purple-300 mb-4">
-                Misi
-              </h4>
-              <ul className="list-disc list-inside text-sm md:text-base text-gray-300 space-y-2 text-left">
-                <li>
-                  Membantu kemajuan sistem komputerisasi Fakultas Teknik
-                  Program Studi Informatika di UNIS Tangerang
-                </li>
-                <li>
-                  Membangkitkan mental dan kemampuan terpendam yang dimiliki
-                  mahasiswa Teknik Informatika guna membangun mereka, agar
-                  menjadi pribadi yang mandiri.
-                </li>
-                <li>
-                  Menyelenggarakan perkumpulan belajar dalam bidang akademik
-                  Program Studi Teknik Informatika guna menciptakan Mahasiswa
-                  Teknik Informatika yang cerdas.
-                </li>
-                <li>
-                  Menyiapkan sumber daya manusia yang berkualitas di bidang
-                  teknologi informatika.
-                </li>
-                <li>
-                  Menghasilkan generasi muda yang terampil, berkualitas,
-                  mandiri dan berwawasan luas.
-                </li>
-                <li>
-                  Membuat program yang sesuai dengan identitas dan azas
-                  organisasi serta berguna untuk mencapai tujuan untuk
-                  menciptakan mahasiswa dan mahasiswi Program Studi Teknik
-                  Informatika yang dapat berkreatifitas dalam bidang akademik
-                  Teknik informatika.
-                </li>
-              </ul>
-            </CardContent>
-          </Card>
         </div>
       </section>
 
