@@ -695,10 +695,6 @@ export default function HimauntikaPage() {
           id="visi-misi"
           className="py-16 md:py-20 px-4 md:px-6 bg-black/40 relative"
         >
-          {/* Icon centang biru */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 -top-4 bg-purple-600 rounded-full w-8 h-8 flex items-center justify-center shadow-lg z-10">
-            <CheckCheck className="w-5 h-5 text-blue-400" strokeWidth={3} />
-          </div>
 
           <h3 className="text-2xl md:text-3xl font-bold text-purple-300 text-center mb-12">
             Visi & Misi HIMAUNTIKA
