@@ -531,18 +531,19 @@ export default function HimauntikaPage() {
                 className="text-sm md:text-base text-gray-300 leading-relaxed text-justify"
                 style={{ textAlign: "justify" }}
               >
-              Menjadi mahasiswa bukan hanya soal datang kuliah, mencatat, dan
-              pulang. Di Himpunan Mahasiswa Unis Teknik Informatika, kamu akan
-              menemukan ruang untuk berkembang lebih jauh, bukan hanya secara
-              akademik tetapi juga dalam berkarya dan berorganisasi. Di sini,
-              kita belajar bersama tentang Internet of Things (IoT) dan
-              Robotics, berbagi materi perkuliahan agar semakin paham, sekaligus
-              melatih kepemimpinan serta keterampilan organisasi. Himpunan ini
-              menjadi wadah bagi mahasiswa IT untuk tumbuh, berkolaborasi, dan
-              menjadikan ide-ide besar menjadi nyata. Bergabunglah dengan kami,
-              karena bersama-sama kita bisa membuktikan bahwa mahasiswa Teknik
-              Informatika UNIS mampu melahirkan generasi yang kreatif, inovatif,
-              dan siap menghadapi tantangan masa depan.
+                Menjadi mahasiswa bukan hanya soal datang kuliah, mencatat, dan
+                pulang. Di Himpunan Mahasiswa Unis Teknik Informatika, kamu akan
+                menemukan ruang untuk berkembang lebih jauh, bukan hanya secara
+                akademik tetapi juga dalam berkarya dan berorganisasi. Di sini,
+                kita belajar bersama tentang Internet of Things (IoT) dan
+                Robotics, berbagi materi perkuliahan agar semakin paham,
+                sekaligus melatih kepemimpinan serta keterampilan organisasi.
+                Himpunan ini menjadi wadah bagi mahasiswa IT untuk tumbuh,
+                berkolaborasi, dan menjadikan ide-ide besar menjadi nyata.
+                Bergabunglah dengan kami, karena bersama-sama kita bisa
+                membuktikan bahwa mahasiswa Teknik Informatika UNIS mampu
+                melahirkan generasi yang kreatif, inovatif, dan siap menghadapi
+                tantangan masa depan.
               </p>
             </div>
 
@@ -559,54 +560,52 @@ export default function HimauntikaPage() {
       </TimelineWrapper>
 
       {/* Projekan Section */}
-<TimelineWrapper>
-  <section
-    id="projekan"
-    className="py-16 md:py-20 px-4 md:px-6 bg-black/40 relative"
-  >
-    {/* Icon centang biru */}
-    <div className="absolute left-1/2 transform -translate-x-1/2 -top-4 bg-purple-600 rounded-full w-8 h-8 flex items-center justify-center shadow-lg z-10">
-      <CheckCheck className="w-5 h-5 text-blue-400" strokeWidth={3} />
-    </div>
-
-    <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center pt-12">
-      {/* Bagian gambar */}
-      <div className="flex justify-center order-1 md:order-none">
-        <img
-          src="/images/projekan-foto.jpg"
-          alt="Projekan IoT & Robotic"
-          className="rounded-2xl shadow-lg w-full max-w-md object-cover"
-        />
-      </div>
-
-      {/* Bagian teks */}
-      <div>
-            <h3 className="text-2xl md:text-3xl font-bold text-purple-300 mb-6">
-              Projek IoT & Robotic di HIMAUNTIKA
-            </h3>
-            <p className="text-sm md:text-base text-gray-300 leading-relaxed text-justify">
-              HIMAUNTIKA tidak hanya menjadi wadah belajar dan berbagi materi,
-              tetapi juga tempat untuk berkarya melalui projek nyata di bidang
-              <span className="font-semibold text-purple-300">
-                {" "}
-                Internet of Things (IoT) dan Robotics
-              </span>
-              . Kami sering membuat projek mulai dari perangkat cerdas sederhana
-              hingga sistem otomatisasi yang bermanfaat. Dokumentasi lengkap
-              projek ini bisa kamu lihat di halaman khusus.
-            </p>
-            <Button
-              onClick={() => setShowProjectsPage(true)}
-              className="mt-6 bg-purple-600 hover:bg-purple-700"
-            >
-              Lihat Selengkapnya
-            </Button>
+      <TimelineWrapper>
+        <section
+          id="projekan"
+          className="py-16 md:py-20 px-4 md:px-6 bg-black/40 relative"
+        >
+          {/* Icon centang biru */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 -top-4 bg-purple-600 rounded-full w-8 h-8 flex items-center justify-center shadow-lg z-10">
+            <CheckCheck className="w-5 h-5 text-blue-400" strokeWidth={3} />
           </div>
 
-    </div>
-  </section>
-</TimelineWrapper>
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center pt-12">
+            {/* Bagian gambar */}
+            <div className="flex justify-center order-1 md:order-none">
+              <img
+                src="/images/projekan-foto.jpg"
+                alt="Projekan IoT & Robotic"
+                className="rounded-2xl shadow-lg w-full max-w-md object-cover"
+              />
+            </div>
 
+            {/* Bagian teks */}
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold text-purple-300 mb-6">
+                Projek IoT & Robotic di HIMAUNTIKA
+              </h3>
+              <p className="text-sm md:text-base text-gray-300 leading-relaxed text-justify">
+                HIMAUNTIKA tidak hanya menjadi wadah belajar dan berbagi materi,
+                tetapi juga tempat untuk berkarya melalui projek nyata di bidang
+                <span className="font-semibold text-purple-300">
+                  {" "}
+                  Internet of Things (IoT) dan Robotics
+                </span>
+                . Kami sering membuat projek mulai dari perangkat cerdas
+                sederhana hingga sistem otomatisasi yang bermanfaat. Dokumentasi
+                lengkap projek ini bisa kamu lihat di halaman khusus.
+              </p>
+              <Button
+                onClick={() => setShowProjectsPage(true)}
+                className="mt-6 bg-purple-600 hover:bg-purple-700"
+              >
+                Lihat Selengkapnya
+              </Button>
+            </div>
+          </div>
+        </section>
+      </TimelineWrapper>
 
       {/* Event Section */}
       <section id="events" className="py-16 md:py-20 px-4 md:px-6 bg-black/40">
@@ -690,6 +689,58 @@ export default function HimauntikaPage() {
           </p>
         </div>
       </section>
+
+            {/* Visi & Misi Section */}
+      <TimelineWrapper>
+        <section
+          id="visi-misi"
+          className="py-16 md:py-20 px-4 md:px-6 bg-black/40 relative"
+        >
+          {/* Icon centang biru */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 -top-4 bg-purple-600 rounded-full w-8 h-8 flex items-center justify-center shadow-lg z-10">
+            <CheckCheck className="w-5 h-5 text-blue-400" strokeWidth={3} />
+          </div>
+
+          <h3 className="text-2xl md:text-3xl font-bold text-purple-300 text-center mb-12">
+            Visi & Misi HIMAUNTIKA
+          </h3>
+
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Card Visi */}
+            <Card className="bg-black/50 border border-purple-700 hover:scale-[1.02] transition-transform shadow-lg">
+              <CardContent className="p-6 md:p-8 text-center md:text-left">
+                <h4 className="text-xl md:text-2xl font-bold text-purple-300 mb-4">
+                  Visi
+                </h4>
+                <p className="text-sm md:text-base text-gray-300 leading-relaxed">
+                  Menjadi wadah pengembangan mahasiswa Teknik Informatika UNIS
+                  yang berintegritas, inovatif, serta mampu berkontribusi dalam
+                  bidang teknologi dan masyarakat. HIMAUNTIKA berkomitmen untuk
+                  membentuk generasi yang cerdas, adaptif, dan siap menghadapi
+                  tantangan era digital.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Card Misi */}
+            <Card className="bg-black/50 border border-purple-700 hover:scale-[1.02] transition-transform shadow-lg">
+              <CardContent className="p-6 md:p-8 text-center md:text-left">
+                <h4 className="text-xl md:text-2xl font-bold text-purple-300 mb-4">
+                  Misi
+                </h4>
+                <ul className="list-disc list-inside text-sm md:text-base text-gray-300 space-y-2 text-left">
+                  <li>Mengembangkan potensi akademik dan non-akademik mahasiswa Teknik Informatika.</li>
+                  <li>Mendorong budaya riset, inovasi, dan implementasi teknologi.</li>
+                  <li>Menciptakan lingkungan organisasi yang inklusif, solid, dan berkolaborasi.</li>
+                  <li>Mengadakan kegiatan edukatif, sosial, dan kreatif yang bermanfaat bagi mahasiswa maupun masyarakat.</li>
+                  <li>Menjadi jembatan aspirasi mahasiswa untuk kemajuan prodi Teknik Informatika UNIS.</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+      </TimelineWrapper>
+
 
       {/* Footer */}
       <footer className="bg-black/30 backdrop-blur-md py-6 text-center text-gray-400 text-sm md:text-base">
