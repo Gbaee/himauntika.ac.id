@@ -7,15 +7,16 @@ const TimelineWrapper = ({ children }) => {
 left-4 md:left-1/2 md:transform md:-translate-x-1/2"
       ></div>
 
-      {/* Icon centang biru */}
+      {/* Icon centang biru full bulatan */}
       <div
-        className="absolute bg-purple-600 rounded-full w-8 h-8 flex items-center justify-center shadow-lg z-10
-left-4 -top-4 md:left-1/2 md:-translate-x-1/2 animate-bounce"
+        className="absolute rounded-full overflow-hidden w-10 h-10 shadow-lg z-10
+left-4 -top-5 md:left-1/2 md:-translate-x-1/2 animate-bounce"
       >
+        {/* Gambar langsung memenuhi bulatan */}
         <img
           src="/images/centang biru.jpg"
           alt="check"
-          className="w-4 h-4 animate-pulse"
+          className="w-full h-full object-cover animate-pulse"
         />
       </div>
 
