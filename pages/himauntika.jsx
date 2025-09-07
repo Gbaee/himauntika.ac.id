@@ -726,29 +726,29 @@ export default function HimauntikaPage() {
               </h4>
               <ul className="list-disc list-inside text-sm md:text-base text-gray-300 space-y-2 text-left">
                 <li>
-                  1.Membantu kemajuan sistem komputerisasi Fakultas Teknik
+                  Membantu kemajuan sistem komputerisasi Fakultas Teknik
                   Program Studi Informatika di UNIS Tangerang
                 </li>
                 <li>
-                  2.Membangkitkan mental dan kemampuan terpendam yang dimiliki
+                  Membangkitkan mental dan kemampuan terpendam yang dimiliki
                   mahasiswa Teknik Informatika guna membangun mereka, agar
                   menjadi pribadi yang mandiri.
                 </li>
                 <li>
-                  3.Menyelenggarakan perkumpulan belajar dalam bidang akademik
+                  Menyelenggarakan perkumpulan belajar dalam bidang akademik
                   Program Studi Teknik Informatika guna menciptakan Mahasiswa
                   Teknik Informatika yang cerdas.
                 </li>
                 <li>
-                  4.Menyiapkan sumber daya manusia yang berkualitas di bidang
+                  Menyiapkan sumber daya manusia yang berkualitas di bidang
                   teknologi informatika.
                 </li>
                 <li>
-                  5.Menghasilkan generasi muda yang terampil, berkualitas,
+                  Menghasilkan generasi muda yang terampil, berkualitas,
                   mandiri dan berwawasan luas.
                 </li>
                 <li>
-                  6.Membuat program yang sesuai dengan identitas dan azas
+                  Membuat program yang sesuai dengan identitas dan azas
                   organisasi serta berguna untuk mencapai tujuan untuk
                   menciptakan mahasiswa dan mahasiswi Program Studi Teknik
                   Informatika yang dapat berkreatifitas dalam bidang akademik
