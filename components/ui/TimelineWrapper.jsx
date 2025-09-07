@@ -1,11 +1,14 @@
 const TimelineWrapper = ({ children }) => {
   return (
     <div className="relative py-12 md:py-16">
-      {/* Garis vertikal */}
-      <div
-        className="absolute h-full w-1 bg-purple-700
+      {/* Garis vertikal animasi */}
+      <motion.div
+        initial={{ scaleY: 0 }}
+        animate={{ scaleY: 1 }}
+        transition={{ duration: 0.8 }}
+        className="absolute h-full w-1 bg-purple-700 origin-top
 left-4 md:left-1/2 md:transform md:-translate-x-1/2"
-      ></div>
+      ></motion.div>
 
       {/* Icon centang biru full bulatan */}
       <div
