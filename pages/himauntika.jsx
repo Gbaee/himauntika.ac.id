@@ -64,7 +64,7 @@ function VisiMisiSection() {
                 persaudaraan yang dilandaskan dengan iman dan takwa dikalangan
                 mahasiswa Teknik Informatika guna melahirkan mahasiswa yang
                 unggul demi memajukan Program Studi Teknik Informatika UNIS
-                Tangerang agar lebih dikenal oleh masyarakat luas.
+                Tangerang agar lebih di kenal oleh masyarakat luas.
               </p>
               <div className="mt-6 h-10" />
             </CardContent>
@@ -88,27 +88,32 @@ function VisiMisiSection() {
               <ul className="list-disc list-inside text-gray-300 space-y-3 flex-grow">
                 <li>
                   Membantu kemajuan sistem komputerisasi Fakultas Teknik Program
-                  Studi Informatika di UNIS Tangerang.
+                  Studi Informatika di UNIS Tangerang
                 </li>
                 <li>
                   Membangkitkan mental dan kemampuan terpendam yang dimiliki
-                  mahasiswa Teknik Informatika agar menjadi pribadi mandiri.
+                  mahasiswa Teknik Informatika guna membangun mereka, agar
+                  menjadi pribadi yang mandiri.
                 </li>
                 <li>
-                  Menyelenggarakan perkumpulan belajar akademik untuk
-                  menciptakan Mahasiswa Informatika yang cerdas.
+                  Menyelenggarakan perkumpulan belajar dalam bidang akademik
+                  Program Studi Teknik Informatika guna menciptakan Mahasiswa
+                  Teknik Informatika yang cerdas.
                 </li>
                 <li>
-                  Menyiapkan sumber daya manusia berkualitas di bidang teknologi
-                  informatika.
+                  Menyiapkan sumber daya manusia yang berkualitas di bidang
+                  teknologi informatika.
                 </li>
                 <li>
-                  Menghasilkan generasi muda yang terampil, mandiri, dan
-                  berwawasan luas.
+                  Menghasilkan generasi muda yang terampil, berkualitas, mandiri
+                  dan berwawasan luas.
                 </li>
                 <li>
-                  Membuat program sesuai identitas organisasi untuk menciptakan
-                  mahasiswa kreatif di bidang akademik.
+                  Membuat program yang sesuai dengan identitas dan azas
+                  organisasi serta berguna untuk mencapai tujuan untuk
+                  menciptakan mahasiswa dan mahasiswi Program Studi Teknik
+                  Informatika yang dapat berkreatifitas dalam bidang akademik
+                  Teknik informatika.
                 </li>
               </ul>
             </CardContent>
@@ -403,7 +408,7 @@ export default function HimauntikaPage() {
           {[
             { id: "home", label: "Home" },
             { id: "modules", label: "Modul" },
-            { id: "visi-misi", label: "Visi & Misi" }, 
+            { id: "visi-misi", label: "Visi & Misi" },
             { id: "struktural", label: "Struktural" },
             { id: "join", label: "Bergabung" },
           ].map((item) => (
