@@ -2,8 +2,6 @@ const TimelineWrapper = ({ children }) => {
   return (
     <div className="relative py-12 md:py-16">
       {" "}
-      {/* ⬅️ Tambahan spacing di sini */}
-      {/* Garis vertikal */}
       <div
         className="absolute h-full w-1 bg-purple-700
 left-4 md:left-1/2 md:transform md:-translate-x-1/2"
@@ -14,7 +12,7 @@ left-4 md:left-1/2 md:transform md:-translate-x-1/2"
 left-4 -top-4 md:left-1/2 md:-translate-x-1/2 animate-bounce"
       >
         <img
-          src="/images/check-blue.png"
+          src="/images/centang biru.jpg"
           alt="check"
           className="w-4 h-4 animate-pulse"
         />
