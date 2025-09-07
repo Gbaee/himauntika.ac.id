@@ -17,7 +17,10 @@ left-4 -top-4 md:left-1/2 md:-translate-x-1/2 animate-bounce"
           className="w-4 h-4 animate-pulse"
         />
       </div>
-      {children}
+      {/* {children} */}
+         {/* Tambahin padding-left supaya isi section tidak dempet dengan garis */}
+      <div className="pl-12 md:pl-0">{children}</div>
+
     </div>
   );
 };
