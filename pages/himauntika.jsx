@@ -691,7 +691,6 @@ export default function HimauntikaPage() {
       </section>
 
             {/* Visi & Misi Section */}
-      <TimelineWrapper>
         <section
           id="visi-misi"
           className="py-16 md:py-20 px-4 md:px-6 bg-black/40 relative"
@@ -739,8 +738,6 @@ export default function HimauntikaPage() {
             </Card>
           </div>
         </section>
-      </TimelineWrapper>
-
 
       {/* Footer */}
       <footer className="bg-black/30 backdrop-blur-md py-6 text-center text-gray-400 text-sm md:text-base">
