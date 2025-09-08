@@ -706,7 +706,7 @@ export default function HimauntikaPage() {
                 img: "/images/buka-puasa.jpg",
               },
               {
-                year: "2025",
+                year: "2023",
                 title: "Workshop Arduino",
                 desc: "Pelatihan langsung tentang Arduino dan berbagai macam jenis sensor.",
                 img: "/images/workshop.jpg",
@@ -718,8 +718,8 @@ export default function HimauntikaPage() {
                 img: "/images/seminar.jpg",
               },
               {
-                year: "2025",
-                title: "Futsal bareng HIMAUNTIKA",
+                year: "2024",
+                title: "Futsal Bareng HIMAUNTIKA",
                 desc: "Main futsal bareng HIMAUNTIKA bukan cuma soal ngejar bola, tapi juga ngejar kebersamaan. Lewat sportivitas dan semangat tim, kita belajar kerja sama, saling support, dan pastinya seru-seruan bareng di luar kelas.",
                 img: "/images/futsal.jpg",
               },
@@ -777,7 +777,7 @@ export default function HimauntikaPage() {
 
       {/* Footer */}
       <footer className="bg-black/30 backdrop-blur-md py-6 text-center text-gray-400 text-sm md:text-base">
-        <p>© 2025 HIMAUNTIKA - Universitas Islam Syekh Yusuf</p>
+        <p>© 2025 HIMAUNTIKA - Universitas Islam Syekh-Yusuf</p>
       </footer>
     </div>
   );
