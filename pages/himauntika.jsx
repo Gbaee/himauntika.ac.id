@@ -425,68 +425,6 @@ export default function HimauntikaPage() {
 
       <HomeSection />
 
-      {/* Hero */}
-      <section
-        id="home"
-        className="flex flex-col items-center justify-center min-h-screen px-4 text-center relative"
-      >
-        <div className="max-w-3xl mx-auto">
-          {/* Judul */}
-          <motion.h2
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: "easeOut" }}
-            className="text-2xl md:text-4xl font-bold text-purple-300 mb-4"
-          >
-            Selamat Datang di Website HIMAUNTIKA
-          </motion.h2>
-
-          {/* Deskripsi */}
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="max-w-2xl mb-6 text-sm md:text-base mx-auto text-gray-300"
-          >
-            Wadah mahasiswa Teknik Informatika UNIS untuk belajar, berkembang,
-            dan berorganisasi.
-          </motion.p>
-
-          {/* Gambar besar dengan animasi */}
-          <div className="flex justify-center mb-6">
-            <motion.img
-              src="/images/struktural.jpg" // ganti sesuai gambar hero kamu
-              alt="Hero HIMAUNTIKA"
-              className="rounded-2xl shadow-lg w-full max-w-2xl object-cover"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-            />
-          </div>
-
-          {/* Tombol Join */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.5 }}
-          >
-            <Button
-              asChild
-              className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-2xl shadow-lg"
-            >
-              <a
-                id="join"
-                href="https://forms.gle/beq3D7vJSo7geFgUA"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Bergabung Sekarang
-              </a>
-            </Button>
-          </motion.div>
-        </div>
-      </section>
-
       {/* Modul */}
       <section id="modules" className="py-16 md:py-20 px-4 md:px-6">
         <h3 className="text-2xl md:text-3xl font-bold text-center text-purple-300 mb-8 md:mb-10">
