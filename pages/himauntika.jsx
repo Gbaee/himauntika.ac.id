@@ -422,31 +422,46 @@ export default function HimauntikaPage() {
         </div>
       </nav>
 
-      {/* Hero */}
+            {/* Hero */}
       <section
         id="home"
-        className="flex flex-col items-center justify-center py-16 md:py-24 px-4 text-center"
+        className="flex flex-col items-center justify-center min-h-screen px-4 text-center relative"
       >
-        <h2 className="text-2xl md:text-4xl font-bold text-purple-300 mb-4">
-          Selamat Datang di Website HIMAUNTIKA
-        </h2>
-        <p className="max-w-2xl mb-6 text-sm md:text-base">
-          Wadah mahasiswa Teknik Informatika UNIS untuk belajar, berkembang, dan
-          berorganisasi.
-        </p>
-        <Button
-          asChild
-          className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 md:px-6 md:py-3 rounded-2xl shadow-lg"
-        >
-          <a
-            id="join"
-            href="https://forms.gle/beq3D7vJSo7geFgUA"
-            target="_blank"
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl md:text-4xl font-bold text-purple-300 mb-4">
+            Selamat Datang di Website HIMAUNTIKA
+          </h2>
+          <p className="max-w-2xl mb-6 text-sm md:text-base mx-auto">
+            Wadah mahasiswa Teknik Informatika UNIS untuk belajar, berkembang, dan
+            berorganisasi.
+          </p>
+
+          {/* Gambar besar */}
+          <div className="flex justify-center mb-6">
+            <img
+              src="/images/home-hero.jpg" // ganti dengan gambar yang kamu mau
+              alt="Hero HIMAUNTIKA"
+              className="rounded-2xl shadow-lg w-full max-w-2xl object-cover"
+            />
+          </div>
+
+          {/* Tombol Join */}
+          <Button
+            asChild
+            className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-2xl shadow-lg"
           >
-            Bergabung Sekarang
-          </a>
-        </Button>
+            <a
+              id="join"
+              href="https://forms.gle/beq3D7vJSo7geFgUA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Bergabung Sekarang
+            </a>
+          </Button>
+        </div>
       </section>
+
 
       {/* Modul */}
       <section id="modules" className="py-16 md:py-20 px-4 md:px-6">
