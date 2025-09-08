@@ -423,6 +423,7 @@ export default function HimauntikaPage() {
       </nav>
 
             {/* Hero */}
+            {/* Hero */}
       <section
         id="home"
         className="flex flex-col items-center justify-center min-h-screen px-4 text-center relative"
@@ -436,12 +437,15 @@ export default function HimauntikaPage() {
             berorganisasi.
           </p>
 
-          {/* Gambar besar */}
+          {/* Gambar besar dengan animasi */}
           <div className="flex justify-center mb-6">
-            <img
-              src="/images/struktural.jpg" // ganti dengan gambar yang kamu mau
+            <motion.img
+              src="/images/home-hero.jpg" // ganti dengan gambar yang kamu mau
               alt="Hero HIMAUNTIKA"
               className="rounded-2xl shadow-lg w-full max-w-2xl object-cover"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
             />
           </div>
 
@@ -461,6 +465,7 @@ export default function HimauntikaPage() {
           </Button>
         </div>
       </section>
+
 
 
       {/* Modul */}
