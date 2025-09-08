@@ -439,7 +439,7 @@ export default function HimauntikaPage() {
           {/* Gambar besar */}
           <div className="flex justify-center mb-6">
             <img
-              src="/images/home-hero.jpg" // ganti dengan gambar yang kamu mau
+              src="/images/struktural.jpg" // ganti dengan gambar yang kamu mau
               alt="Hero HIMAUNTIKA"
               className="rounded-2xl shadow-lg w-full max-w-2xl object-cover"
             />
