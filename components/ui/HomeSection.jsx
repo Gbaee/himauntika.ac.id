@@ -66,14 +66,15 @@ export default function HomeSection() {
           transition={{ duration: 0.9, delay: 0.3 }}
           className="max-w-2xl mb-8 text-sm md:text-lg mx-auto text-gray-300"
         >
-          Wadah mahasiswa Teknik Informatika UNIS untuk belajar, berkembang, dan berorganisasi.
+          Wadah mahasiswa Teknik Informatika UNIS untuk belajar, berkembang, dan
+          berorganisasi.
         </motion.p>
 
         {/* Gambar Hero */}
         <motion.img
           src="/images/struktural.jpg"
           alt="Hero HIMAUNTIKA"
-          className="rounded-3xl shadow-2xl w-full max-w-3xl object-cover border border-purple-700/50"
+          className="rounded-3xl shadow-2xl w-full max-w-3xl object-cover border border-purple-700/50 mx-auto"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
@@ -104,6 +105,3 @@ export default function HomeSection() {
     </section>
   );
 }
-
-
-
