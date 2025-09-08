@@ -6,6 +6,7 @@ import Image from "next/image";
 import { CheckCheck } from "lucide-react";
 import { Sparkles, Target } from "lucide-react";
 import TimelineWrapper from "@/components/ui/TimelineWrapper";
+import HomeSection from "@/components/ui/HomeSection";
 
 // Komponen Visi & Misi
 function VisiMisiSection() {
@@ -421,6 +422,8 @@ export default function HimauntikaPage() {
           ))}
         </div>
       </nav>
+
+      <HomeSection />
 
       {/* Hero */}
       <section
