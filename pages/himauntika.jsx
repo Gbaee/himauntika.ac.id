@@ -398,9 +398,8 @@ export default function HimauntikaPage() {
           {[
             { id: "home", label: "Home" },
             { id: "modules", label: "Modul" },
-            { id: "visi-misi", label: "Visi & Misi" },
             { id: "struktural", label: "Struktural" },
-            { id: "join", label: "Bergabung" },
+            { id: "visi-misi", label: "Visi & Misi" },
           ].map((item) => (
             <button
               key={item.id}
@@ -441,7 +440,7 @@ export default function HimauntikaPage() {
         >
           <a
             id="join"
-            href="https://forms.gle/CtR2TTjDATaFiNVb6"
+            href="https://forms.gle/beq3D7vJSo7geFgUA"
             target="_blank"
           >
             Bergabung Sekarang
