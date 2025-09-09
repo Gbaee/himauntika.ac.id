@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function MotivasiSection({ quote, author, image }) {
   const sectionRef = useRef(null);
@@ -11,11 +12,11 @@ export default function MotivasiSection({ quote, author, image }) {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setIsVisible(true);
-            observer.disconnect();
+            observer.disconnect(); // stop observe setelah kelihatan sekali
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 } // aktif kalau 30% section kelihatan
     );
 
     if (sectionRef.current) {
@@ -30,45 +31,59 @@ export default function MotivasiSection({ quote, author, image }) {
   return (
     <section
       ref={sectionRef}
-      className="relative py-16 bg-gradient-to-b from-purple-950 via-black/90 to-purple-950 border-y-8 border-purple-700"
+      className="relative py-16 md:py-20 bg-gradient-to-b from-purple-950 via-black to-purple-900 
+                 border-y-4 border-purple-600"
     >
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-0 rounded-2xl overflow-hidden shadow-2xl border border-purple-800">
-        {/* Gambar kiri */}
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-6">
+        {/* Foto Motivasi */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={isVisible ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7 }}
-          className="h-full w-full"
+          className="flex justify-center md:justify-start"
         >
-          <img
-            src={image || "/images/motivation-photo.jpg"}
-            alt="Motivasi"
-            className="w-full h-full object-cover"
-          />
+          <div className="w-full max-w-md h-[320px] overflow-hidden rounded-2xl shadow-2xl border border-purple-700">
+            <img
+              src={image || "/images/motivation-photo.jpg"}
+              alt="Motivasi"
+              className="w-full h-full object-cover"
+            />
+          </div>
         </motion.div>
 
-        {/* Teks motivasi kanan */}
+        {/* Teks Motivasi */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           animate={isVisible ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="flex items-center justify-center bg-gradient-to-br from-black/95 via-purple-950/90 to-black/95 p-10 text-center md:text-left"
+          className="flex flex-col justify-center text-center md:text-left"
         >
-          <div>
-            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed italic mb-6">
-              {quote || (
-                <>
-                  "The <span className="font-bold text-purple-300">best investment</span> you can make, is an {" "}
-                  <span className="font-bold text-purple-300">investment in yourself</span>... <br />
-                  The more you <span className="font-bold text-purple-300">learn</span>, the more you'll {" "}
-                  <span className="font-bold text-purple-300">earn</span>."
-                </>
-              )}
-            </p>
-            <p className="text-purple-300 font-semibold text-right">
-              {author || "- Warren Buffet"}
-            </p>
-          </div>
+          <Card className="bg-black/60 border border-purple-700 shadow-lg rounded-2xl">
+            <CardContent className="p-6 md:p-10">
+              <p className="text-lg md:text-xl text-gray-300 leading-relaxed italic mb-6">
+                {quote || (
+                  <>
+                    "The{" "}
+                    <span className="font-bold text-purple-300">
+                      best investment
+                    </span>{" "}
+                    you can make, is an{" "}
+                    <span className="font-bold text-purple-300">
+                      investment in yourself
+                    </span>
+                    ... <br />
+                    The more you{" "}
+                    <span className="font-bold text-purple-300">learn</span>,
+                    the more you'll{" "}
+                    <span className="font-bold text-purple-300">earn</span>."
+                  </>
+                )}
+              </p>
+              <p className="text-gray-400 font-semibold text-right">
+                {author || "- Warren Buffet"}
+              </p>
+            </CardContent>
+          </Card>
         </motion.div>
       </div>
     </section>
