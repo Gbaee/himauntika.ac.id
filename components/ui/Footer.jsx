@@ -27,13 +27,13 @@ export default function Footer() {
         {/* Quick links */}
         <div className="flex flex-col items-center md:items-start space-y-3">
           <h3 className="text-lg font-semibold text-white">Quick Links</h3>
-          <a href="/kenapa" className="hover:text-pink-400 transition">
+          <a href="#kenapa" className="hover:text-pink-400 transition">
             Tentang Kami
           </a>
-          <a href="/events" className="hover:text-pink-400 transition">
+          <a href="#events" className="hover:text-pink-400 transition">
             Acara & Kegiatan
           </a>
-          <a href="/join" className="hover:text-pink-400 transition">
+          <a href="#join" className="hover:text-pink-400 transition">
             Bergabung
           </a>
           <a href="/contact" className="hover:text-pink-400 transition">
@@ -48,7 +48,7 @@ export default function Footer() {
               asChild
               className="bg-purple-600 hover:bg-purple-700 text-white rounded-full px-6 shadow-lg"
             >
-              <a href="/join">Join Us</a>
+              <a href="#join">Join Us</a>
             </Button>
             <Button
               asChild
@@ -68,7 +68,7 @@ export default function Footer() {
               <Music2 className="w-6 h-6" />
             </motion.a>
             <motion.a
-              href="https://www.instagram.com/himauntika_unis?igsh=MWRuM2M5bTc3a2s1dA=="
+              href="https://www.instagram.com/himauntika_unis?utm_source=qr&igsh=MWN5OG9uOWY5bGNtZg=="
               target="_blank"
               whileHover={{ scale: 1.2, rotate: -10 }}
               className="hover:text-purple-500 transition"
