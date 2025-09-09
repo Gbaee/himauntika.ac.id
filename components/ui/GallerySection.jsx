@@ -5,16 +5,16 @@ import Image from "next/image";
 export default function GallerySection() {
   const images = [
     {
-      src: "/images/gallery1.jpg",
-      alt: "Presentasi Grafik",
+      src: "/images/struktural.jpg",
+      alt: "Himauntika",
     },
     {
-      src: "/images/gallery2.jpg",
-      alt: "Tim Ronald Capital",
+      src: "/images/seminar.jpg",
+      alt: "Himauntika",
     },
     {
-      src: "/images/gallery3.jpg",
-      alt: "Seminar Pasar Crypto",
+      src: "/images/buka-puasa.jpg",
+      alt: "Himauntika",
     },
   ];
 
