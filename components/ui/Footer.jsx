@@ -33,7 +33,7 @@ export default function Footer() {
           <a href="#events" className="hover:text-pink-400 transition">
             Acara & Kegiatan
           </a>
-          <a href="#join" className="hover:text-pink-400 transition">
+          <a href="https://forms.gle/beq3D7vJSo7geFgUA" className="hover:text-pink-400 transition">
             Bergabung
           </a>
           <a href="/contact" className="hover:text-pink-400 transition">
