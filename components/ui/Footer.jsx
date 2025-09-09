@@ -48,7 +48,7 @@ export default function Footer() {
               asChild
               className="bg-purple-600 hover:bg-purple-700 text-white rounded-full px-6 shadow-lg"
             >
-              <a href="#join">Join Us</a>
+              <a href="https://forms.gle/beq3D7vJSo7geFgUA">Join Us</a>
             </Button>
             <Button
               asChild
