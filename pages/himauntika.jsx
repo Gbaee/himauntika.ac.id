@@ -781,7 +781,7 @@ export default function HimauntikaPage() {
       <MotivasiSection
         quote="HIMAUNTIKA bukan hanya organisasi, tapi ruang untuk menemukan versi terbaik dari dirimu."
         author="- Ketua Himpunan"
-        image="/images/nazaa.jpg"
+        image="/images/nazaa-bg.jpg"
       />
 
       <GallerySection />
