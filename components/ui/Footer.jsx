@@ -76,7 +76,7 @@ export default function Footer() {
               <Instagram className="w-6 h-6" />
             </motion.a>
             <motion.a
-              href="mailto:himauntika@unis.ac.id"
+              href="himauntika@unis.ac.id"
               whileHover={{ scale: 1.2, rotate: 10 }}
               className="hover:text-blue-400 transition"
             >
