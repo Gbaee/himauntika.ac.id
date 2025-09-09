@@ -31,7 +31,7 @@ export default function MotivasiSection({ quote, author, image }) {
   return (
     <section
       ref={sectionRef}
-      className="relative py-16 md:py-20 bg-black border-y-4 border-purple-600"
+      className="relative py-16 md:py-20 bg-gradient-to-b from-purple-950/20 via-black to-purple-900/20 border-y-4 border-purple-600"
     >
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-6">
         {/* Foto Motivasi */}
