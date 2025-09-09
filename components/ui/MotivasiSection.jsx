@@ -16,7 +16,7 @@ export default function MotivasiSection({ quote, author, image }) {
           }
         });
       },
-      { threshold: 0.3 } // aktif kalau 30% section kelihatan
+      { threshold: 0.3 }
     );
 
     if (sectionRef.current) {
@@ -31,8 +31,7 @@ export default function MotivasiSection({ quote, author, image }) {
   return (
     <section
       ref={sectionRef}
-      className="relative py-16 md:py-20 bg-gradient-to-b from-purple-950 via-black to-purple-900 
-                 border-y-4 border-purple-600"
+      className="relative py-16 md:py-20 bg-black border-y-4 border-purple-600"
     >
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-6">
         {/* Foto Motivasi */}
@@ -58,7 +57,7 @@ export default function MotivasiSection({ quote, author, image }) {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="flex flex-col justify-center text-center md:text-left"
         >
-          <Card className="bg-black/60 border border-purple-700 shadow-lg rounded-2xl">
+          <Card className="bg-black/70 border border-purple-700 shadow-lg rounded-2xl">
             <CardContent className="p-6 md:p-10">
               <p className="text-lg md:text-xl text-gray-300 leading-relaxed italic mb-6">
                 {quote || (
