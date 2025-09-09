@@ -8,6 +8,7 @@ import { Sparkles, Target } from "lucide-react";
 import TimelineWrapper from "@/components/ui/TimelineWrapper";
 import HomeSection from "@/components/ui/HomeSection";
 import MotivasiSection from "@/components/ui/MotivasiSection";
+import Footer from "@/components/ui/Footer";
 
 
 // Komponen Visi & Misi
