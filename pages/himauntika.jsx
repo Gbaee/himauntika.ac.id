@@ -9,7 +9,7 @@ import TimelineWrapper from "@/components/ui/TimelineWrapper";
 import HomeSection from "@/components/ui/HomeSection";
 import MotivasiSection from "@/components/ui/MotivasiSection";
 import Footer from "@/components/ui/Footer";
-
+import GallerySection from "@/components/ui/GallerySection";
 
 // Komponen Visi & Misi
 function VisiMisiSection() {
@@ -778,12 +778,13 @@ export default function HimauntikaPage() {
 
       <VisiMisiSection />
 
-       <MotivasiSection
+      <MotivasiSection
         quote="Belajar itu investasi terbaik buat masa depan."
         author="- Agus Ganteng"
         image="/images/agus.jpg"
       />
 
+      <GallerySection />
 
       {/* Footer */}
       <Footer />
