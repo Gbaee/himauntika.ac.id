@@ -785,9 +785,7 @@ export default function HimauntikaPage() {
 
 
       {/* Footer */}
-      <footer className="bg-black/30 backdrop-blur-md py-6 text-center text-gray-400 text-sm md:text-base">
-        <p>© 2025 HIMAUNTIKA - Universitas Islam Syekh-Yusuf</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
