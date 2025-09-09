@@ -31,8 +31,14 @@ export default function MotivasiSection({ quote, author, image }) {
   return (
     <section
       ref={sectionRef}
-      className="relative py-16 md:py-20 bg-gradient-to-b from-purple-950/20 via-black to-purple-900/20 border-y-4 border-purple-600"
+      className="relative py-16 md:py-20 bg-gradient-to-b from-purple-950/20 via-black to-purple-900/20 overflow-hidden"
     >
+      {/* Border atas tipis */}
+      <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-purple-500/60 to-transparent" />
+
+      {/* Border bawah tipis */}
+      <div className="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-purple-500/60 to-transparent" />
+
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-6">
         {/* Foto Motivasi */}
         <motion.div
@@ -41,7 +47,7 @@ export default function MotivasiSection({ quote, author, image }) {
           transition={{ duration: 0.7 }}
           className="flex justify-center md:justify-start"
         >
-          <div className="w-full max-w-md h-[320px] overflow-hidden rounded-2xl shadow-2xl border border-purple-700">
+          <div className="w-full max-w-md h-[320px] overflow-hidden rounded-2xl shadow-2xl">
             <img
               src={image || "/images/motivation-photo.jpg"}
               alt="Motivasi"
