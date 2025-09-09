@@ -30,9 +30,7 @@ export default function GallerySection() {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
         className="relative text-3xl md:text-4xl font-extrabold text-center mb-14 drop-shadow-lg text-purple-300"
-      >
-        Dokumentasi & Pesan Kami
-      </motion.h3>
+      ></motion.h3>
 
       {/* Grid Gambar */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -64,14 +62,18 @@ export default function GallerySection() {
         className="text-center mt-10 text-lg md:text-xl font-semibold"
       >
         <span className="text-white">
-          "Kita Menggunakan Uang Belajar Kalian Untuk{" "}
-          <span className="text-purple-400">Membangun Sekolah</span> Di Daerah
-          Yang <span className="text-blue-400">Membutuhkan</span>."
+          "HIMAUNTIKA hadir bukan untuk menjadi yang terbaik{" "}
+          <span className="text-purple-400">
+            tapi untuk melahirkan yang terbaik, 
+          </span>{" "}
+          Karena setiap langkah kecil yang kamu ambil di HIMAUNTIKA adalah
+          bagian dari perjalanan besar menuju{" "}
+          <span className="text-blue-400">Masa Depan"</span>."
         </span>
       </motion.p>
 
       <p className="text-center text-gray-400 mt-4 text-sm md:text-base">
-        – Akademi Crypto Founder
+        – Himpunan Mahasiswa Unis Teknik Informatika
       </p>
     </section>
   );
