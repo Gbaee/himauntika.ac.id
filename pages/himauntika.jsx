@@ -7,6 +7,8 @@ import { CheckCheck } from "lucide-react";
 import { Sparkles, Target } from "lucide-react";
 import TimelineWrapper from "@/components/ui/TimelineWrapper";
 import HomeSection from "@/components/ui/HomeSection";
+import MotivasiSection from "@/components/ui/MotivasiSection";
+
 
 // Komponen Visi & Misi
 function VisiMisiSection() {
@@ -774,6 +776,13 @@ export default function HimauntikaPage() {
       </section>
 
       <VisiMisiSection />
+
+       <MotivasiSection
+        quote="Belajar itu investasi terbaik buat masa depan."
+        author="- Agus Ganteng"
+        image="/images/agus.jpg"
+      />
+
 
       {/* Footer */}
       <footer className="bg-black/30 backdrop-blur-md py-6 text-center text-gray-400 text-sm md:text-base">
