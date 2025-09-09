@@ -779,9 +779,9 @@ export default function HimauntikaPage() {
       <VisiMisiSection />
 
       <MotivasiSection
-        quote="Belajar itu investasi terbaik buat masa depan."
-        author="- Agus Ganteng"
-        image="/images/agus.jpg"
+        quote="HIMAUNTIKA bukan hanya organisasi, tapi ruang untuk menemukan versi terbaik dari dirimu."
+        author="- Ketua Himpunan"
+        image="/images/nazaa.jpg"
       />
 
       <GallerySection />
