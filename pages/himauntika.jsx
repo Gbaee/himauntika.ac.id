@@ -9,7 +9,7 @@ import HomeSection from "@/components/ui/HomeSection";
 import MotivasiSection from "@/components/ui/MotivasiSection";
 import Footer from "@/components/ui/Footer";
 import GallerySection from "@/components/ui/GallerySection";
-import TipeOrangSection from "@/components/TipeOrangSection";
+import TipeOrangSection from "@/components/ui/TipeOrangSection";
 
 // Komponen Visi & Misi
 function VisiMisiSection() {
