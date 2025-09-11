@@ -3,13 +3,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { CheckCheck } from "lucide-react";
 import { Sparkles, Target } from "lucide-react";
 import TimelineWrapper from "@/components/ui/TimelineWrapper";
 import HomeSection from "@/components/ui/HomeSection";
 import MotivasiSection from "@/components/ui/MotivasiSection";
 import Footer from "@/components/ui/Footer";
 import GallerySection from "@/components/ui/GallerySection";
+import TipeOrangSection from "@/components/TipeOrangSection";
 
 // Komponen Visi & Misi
 function VisiMisiSection() {
@@ -777,6 +777,8 @@ export default function HimauntikaPage() {
       </section>
 
       <VisiMisiSection />
+
+      <TipeOrangSection />
 
       <MotivasiSection
         quote="HIMAUNTIKA bukan hanya organisasi, tapi ruang untuk menemukan versi terbaik dari dirimu."
