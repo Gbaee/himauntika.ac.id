@@ -20,8 +20,8 @@ export default function TipeOrangSection() {
           className="relative rounded-xl overflow-hidden border border-cyan-500/50 shadow-lg"
         >
           <Image
-            src="/images/lompat.jpg" // ganti sesuai gambarmu
-            alt="Orang yang mau melompat"
+            src="/images/orang-melompat.jpg" // ganti sesuai gambarmu
+            alt="Orang"
             width={500}
             height={600}
             className="w-full h-[400px] object-cover"
@@ -39,7 +39,7 @@ export default function TipeOrangSection() {
           className="relative rounded-xl overflow-hidden border border-cyan-500/50 shadow-lg"
         >
           <Image
-            src="/images/duduk.jpg" // ganti sesuai gambarmu
+            src="/images/berdiam-diri.jpg" // ganti sesuai gambarmu
             alt="Orang yang mau berdiam diri"
             width={500}
             height={600}
