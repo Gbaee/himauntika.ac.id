@@ -431,7 +431,7 @@ export default function HimauntikaPage() {
       {/* Modul */}
       <section id="modules" className="py-16 md:py-20 px-4 md:px-6">
         <h3 className="text-2xl md:text-3xl font-bold text-center text-purple-300 mb-8 md:mb-10">
-          Modul Pembelajaran Teknik Informatika
+          Modul Pembelajaran Teknik Informatika unis
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {modules.map((mod, idx) => (
