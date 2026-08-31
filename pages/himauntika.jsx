@@ -159,24 +159,29 @@ export default function HimauntikaPage() {
   const bph = [
     {
       role: "Ketua Himpunan",
-      name: "Naza Salsabila Putri",
-      img: "/images/nazaa.jpg",
+      name: "Muhammad Eko Maulana",
+      img: "/images/ekoo.JPG",
+    },
+    {
+      role: "Wakil Ketua Himpunan",
+      name: "Luthfi Azami Kusuma",
+      img: "/images/azamm.JPG",
     },
     {
       role: "Sekretaris",
-      name: "Nabila Vidia Putri",
-      img: "/images/nabila.jpg",
+      name: "Esai Septiana",
+      img: "/images/esaii.JPG",
     },
-    { role: "Bendahara", name: "Layyinatus Syifa", img: "/images/sipaa.jpg" },
-    { role: "Koor Umum", name: "Lutfi Azami Kusuma", img: "/images/azam.jpg" },
+    { role: "Bendahara", name: "Layyinatus Syifa", img: "/images/sipa.JPG" },
+    { role: "Koor Umum", name: "Agus Nugrohojati", img: "/images/agus.jpg" },
   ];
 
   const divisions = {
     pendidikan: [
       {
         role: "Koordinator Pendidikan",
-        name: "Agus Nugrohojati",
-        img: "/images/agus.jpg",
+        name: "Muhammad Ikbaar Agassy",
+        img: "/images/ikbaar.jpg",
       },
       {
         role: "Anggota",
@@ -186,48 +191,150 @@ export default function HimauntikaPage() {
       { role: "Anggota", name: "Wanda Sofiah", img: "/images/wanda.jpg" },
       {
         role: "Anggota",
-        name: "Rizki Adnan Halim",
-        img: "/images/caplang.jpg",
+        name: "Achmad Prasetyo",
+        img: "/images/pras.jpg",
+      },
+      {
+        role: "Anggota",
+        name: "Bisri Sulhi",
+        img: "/images/bisri.jpg",
+      },
+      {
+        role: "Anggota",
+        name: "Sanjaya Putra Ismoyo",
+        img: "/images/sanjaya.jpg",
+      },
+      {
+        role: "Anggota",
+        name: "Wardah Hamidah",
+        img: "/images/wardah.jpg",
       },
     ],
     kaderisasi: [
       {
         role: "Koordinator Kaderisasi",
-        name: "Bisri Sulhi",
-        img: "/images/bisri.jpg",
+        name: "Nabihi Ramdhani",
+        img: "/images/nabihii.png",
       },
-      { role: "Anggota", name: "Muhamad Eko Maulana", img: "/images/eko.jpg" },
+      { role: "Anggota", name: "Eka Ramadhani", img: "/images/eka.jpeg" },
       {
         role: "Anggota",
-        name: "Raja Akbar Sanjaini",
-        img: "/images/akbar.jpg",
+        name: "Siti Holisatun Nazwa",
+        img: "/images/awa.JPG",
+      },
+      {
+        role: "Anggota",
+        name: "Perdy Jasti Wijaya",
+        img: "/images/perdi.png",
+      },
+      { role: "Anggota", name: "Ahmad Sonhaji", img: "/images/sonhaji.png" },
+      {
+        role: "Anggota",
+        name: "Nayla Mutia Ifana",
+        img: "/images/nayla.jpg",
+      },
+      {
+        role: "Anggota",
+        name: "Aulia Rahma Ramdhiany",
+        img: "/images/aul.jpeg",
+      },
+      {
+        role: "Anggota",
+        name: "Tri Yunita Mahadewi",
+        img: "/images/try.JPG",
+      },
+      {
+        role: "Anggota",
+        name: "Tri Aditya Gusti Firdaus",
+        img: "/images/aditya.jpg",
+      },
+      {
+        role: "Anggota",
+        name: "Arlyn Ailsya Zakianie",
+        img: "/images/arlyn.jpg",
+      },
+      {
+        role: "Anggota",
+        name: "Dhaffa Arrizky Aulia",
+        img: "/images/Dhaffa.jpg",
+      },
+      {
+        role: "Anggota",
+        name: "Siti Nuraeny",
+        img: "/images/nuraeny.jpg",
+      },
+      {
+        role: "Anggota",
+        name: "alattar Rasyid Rusmawan",
+        img: "/images/nuraeny.jpg",
+      },
+    ],
+    humas: [
+      {
+        role: "Koordinator Humas",
+        name: "Chantika Haerul Putri",
+        img: "/images/cantika.jpg",
+      },
+      { role: "Anggota", name: "Felix Ando Tokysia", img: "/images/felix.jpg" },
+      { role: "Anggota", name: "Nazwa Amelia", img: "/images/amel.jpg" },
+      {
+        role: "Anggota",
+        name: "Ade Nurul Fadhilah",
+        img: "/images/ade.jpg",
+      },
+      {
+        role: "Anggota",
+        name: "Muhammad Azriel Fachrial",
+        img: "/images/azril.jpg",
+      },
+      {
+        role: "Anggota",
+        name: "Ahmad Baihaqi",
+        img: "/images/baihaqi.jpg",
+      },
+      {
+        role: "Anggota",
+        name: "Akmal Kurniawan",
+        img: "/images/akmal.jpg",
+      },{
+        role: "Anggota",
+        name: "Najwa Syifa Aulia",
+        img: "/images/najwa.jpg",
+      },{
+        role: "Anggota",
+        name: "Khalifah Putra Gilang Ramadhan",
+        img: "/images/gilang.jpg",
+      },
+    ],
+    asset: [
+      {
+        role: "Koordinator Asset & Logistik",
+        name: "Zamar Balfas Abdullah",
+        img: "/images/balfas.jpg",
       },
       {
         role: "Anggota",
         name: "Rulie Pernanda Kesuma",
         img: "/images/rulie.jpg",
       },
-      { role: "Anggota", name: "Esai Septiana", img: "/images/essai.jpg" },
-    ],
-    humas: [
       {
-        role: "Koordinator Humas",
-        name: "Chantika Haerul Putri",
-        img: "/images/chantika.jpg",
-      },
-      { role: "Anggota", name: "Felix Ando Tokysia", img: "/images/felix.jpg" },
-      { role: "Anggota", name: "Nazwa Amelia", img: "/images/amel.jpg" },
-    ],
-    asset: [
-      {
-        role: "Koordinator Asset & Logistik",
-        name: "Nabihi Ramadhani",
-        img: "/images/nabihi.jpg",
+        role: "Anggota",
+        name: "Arief Trio Dewantoro",
+        img: "/images/arif.jpg",
       },
       {
         role: "Anggota",
-        name: "Zamar Balfas Abdullah",
-        img: "/images/balfas.jpg",
+        name: "Muhammad Syibli Al-ghifari",
+        img: "/images/alghifari.jpg",
+      },
+      {
+        role: "Anggota",
+        name: "Ryan Maulana",
+        img: "/images/ryan.jpg",
+      },{
+        role: "Anggota",
+        name: "Al-ghifari Desdi Akbar Manurung",
+        img: "/images/rulie.jpg",
       },
     ],
   };
@@ -783,7 +890,7 @@ export default function HimauntikaPage() {
       <MotivasiSection
         quote="HIMAUNTIKA bukan hanya organisasi, tapi ruang untuk menemukan versi terbaik dari dirimu."
         author="- Ketua Himpunan"
-        image="/images/nazaa-bg.png"
+        image="/images/ekobg.png"
       />
 
       <GallerySection />

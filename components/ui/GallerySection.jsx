@@ -6,15 +6,26 @@ export default function GallerySection() {
   const images = [
     {
       src: "/images/struktural.jpg",
-      alt: "Himauntika",
+      alt: "struktural",
     },
     {
-      src: "/images/seminar.jpg",
-      alt: "Himauntika",
+      src: "/images/demo.jpeg",
+      alt: "latihan demo pdhm",
     },
     {
       src: "/images/buka-puasa.jpg",
-      alt: "Himauntika",
+      alt: "event buka puasa bersama",
+    },
+    {
+      src: "/images/seminar.jpg",
+      alt: "seminar go digital",
+    },
+    {
+      src: "/images/pdhm.jpeg",
+      alt: "pdhm 2025",
+    },{
+      src: "/images/pkkmb.jpeg",
+      alt: "pkkmb 2024",
     },
   ];
 
