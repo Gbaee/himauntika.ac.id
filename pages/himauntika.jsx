@@ -403,8 +403,26 @@ export default function HimauntikaPage() {
       },
       {
         role: "Anggota",
-        name: "Muhammad Ikbaar Agassy",
-        img: "/images/ikbaar.jpg",
+        name: "syahdan",
+        img: "/images/syahdan.jpg",
+      },
+      {
+        role: "Anggota",
+        name: "bayu",
+        img: "/images/bayu.jpg",
+      },
+      {
+        role: "Anggota",
+        name: "azwan",
+        img: "/images/azwan.jpg",
+      },{
+        role: "Anggota",
+        name: "1",
+        img: "/images/1.jpg",
+      },{
+        role: "Anggota",
+        name: "2",
+        img: "/images/2.jpg",
       },
       { role: "Anggota", name: "Wanda Sofiah", img: "/images/wanda.jpg" },
       {
