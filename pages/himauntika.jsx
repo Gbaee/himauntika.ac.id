@@ -658,7 +658,6 @@ export default function HimauntikaPage() {
     <div className="min-h-screen bg-gradient-to-b from-purple-900 via-black to-purple-950 text-white">
       <Navbar />
       <HeroSection />
-      <HomeSection />
       <StatsSection />
       <WhyHimauntika />
       <LearningHub />
