@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X, ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 const navItems = [
   { id: "home", label: "Home" },
@@ -106,14 +107,26 @@ export default function Navbar() {
               onClick={() => scrollToSection("home")}
               className="group flex items-center gap-3"
             >
-              {/* Logo Icon */}
-              <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 shadow-lg shadow-purple-500/20 overflow-hidden">
-                <span className="text-white font-black text-sm relative z-10">
-                  H
-                </span>
+              {/* ========================================
+                  LOGO ICON GAMBAR HIMAUNTIKA
+              ======================================== */}
+              <div className="relative flex items-center justify-center w-11 h-11 rounded-xl bg-white/5 border border-white/10 shadow-lg shadow-purple-500/20 overflow-hidden transition-all duration-300 group-hover:border-purple-400/40 group-hover:shadow-purple-500/40">
+                
+                {/* Gradient Glow */}
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/30 via-transparent to-pink-500/30 opacity-70 group-hover:opacity-100 transition-opacity duration-300" />
 
-                {/* Hover Effect */}
-                <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+                {/* Logo */}
+                <Image
+                  src="/images/himauntikaa.png"
+                  alt="Logo HIMAUNTIKA"
+                  width={44}
+                  height={44}
+                  priority
+                  className="relative z-10 w-full h-full object-contain p-1.5 transition-transform duration-300 group-hover:scale-110"
+                />
+
+                {/* Hover Shine */}
+                <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:translate-x-full transition-transform duration-700" />
               </div>
 
               {/* Logo Text */}
@@ -229,6 +242,35 @@ export default function Navbar() {
           >
             {/* Mobile Menu Content */}
             <div className="flex flex-col h-full pt-28 px-6">
+
+              {/* ========================================
+                  MOBILE BRAND
+              ======================================== */}
+              <div className="flex items-center gap-3 mb-8">
+                
+                {/* Mobile Logo */}
+                <div className="relative w-12 h-12 rounded-xl bg-white/5 border border-purple-500/20 overflow-hidden shadow-lg shadow-purple-500/20">
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-500/20" />
+
+                  <Image
+                    src="/images/logo-himauntika.png"
+                    alt="Logo HIMAUNTIKA"
+                    width={48}
+                    height={48}
+                    className="relative z-10 w-full h-full object-contain p-1.5"
+                  />
+                </div>
+
+                <div>
+                  <p className="text-white font-bold tracking-wide">
+                    HIMAUNTIKA
+                  </p>
+
+                  <p className="text-[10px] text-purple-400 tracking-[0.2em]">
+                    UNIS TANGERANG
+                  </p>
+                </div>
+              </div>
 
               {/* Navigation Label */}
               <p className="text-xs uppercase tracking-[0.3em] text-purple-400 mb-6">

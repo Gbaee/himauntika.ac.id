@@ -12,6 +12,7 @@ import {
   Heart,
   ArrowUp,
 } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -27,20 +28,28 @@ export default function Footer() {
     <footer className="relative overflow-hidden bg-black text-gray-300">
 
       {/* =====================================================
-          BACKGROUND
+          BACKGROUND EFFECT
       ===================================================== */}
 
-      {/* Purple glow */}
-
+      {/* Main Purple Glow */}
       <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-purple-700/20 blur-[120px] rounded-full pointer-events-none" />
 
+      {/* Bottom Left Glow */}
       <div className="absolute bottom-0 left-[-150px] w-[350px] h-[350px] bg-purple-800/10 blur-[120px] rounded-full pointer-events-none" />
 
+      {/* Bottom Right Glow */}
       <div className="absolute bottom-0 right-[-150px] w-[350px] h-[350px] bg-fuchsia-800/10 blur-[120px] rounded-full pointer-events-none" />
 
-      {/* Technology grid */}
-
-      <div className="absolute inset-0 opacity-[0.025] pointer-events-none bg-[linear-gradient(rgba(255,255,255,0.8)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.8)_1px,transparent_1px)] bg-[size:50px_50px]" />
+      {/* Technology Grid */}
+      <div
+        className="
+          absolute inset-0
+          opacity-[0.025]
+          pointer-events-none
+          bg-[linear-gradient(rgba(255,255,255,0.8)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.8)_1px,transparent_1px)]
+          bg-[size:50px_50px]
+        "
+      />
 
       {/* =====================================================
           TOP CTA
@@ -63,11 +72,20 @@ export default function Footer() {
           transition={{
             duration: 0.7,
           }}
-          className="relative overflow-hidden rounded-3xl border border-purple-500/20 bg-gradient-to-r from-purple-950/60 via-black/70 to-purple-950/40 p-8 md:p-10"
+          className="
+            relative
+            overflow-hidden
+            rounded-3xl
+            border border-purple-500/20
+            bg-gradient-to-r
+            from-purple-950/60
+            via-black/70
+            to-purple-950/40
+            p-8 md:p-10
+          "
         >
 
-          {/* Glow */}
-
+          {/* CTA Glow */}
           <div className="absolute -right-20 -top-20 w-56 h-56 bg-purple-600/20 blur-3xl rounded-full" />
 
           <div className="relative flex flex-col md:flex-row items-center justify-between gap-8">
@@ -75,6 +93,8 @@ export default function Footer() {
             {/* CTA Text */}
 
             <div className="text-center md:text-left">
+
+              {/* Badge */}
 
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-purple-500/20 bg-purple-500/10 mb-4">
 
@@ -86,17 +106,20 @@ export default function Footer() {
 
               </div>
 
+              {/* Heading */}
+
               <h2 className="text-2xl md:text-3xl font-bold text-white">
                 Punya ide besar?
               </h2>
 
-              <p className="text-sm md:text-base text-gray-400 mt-2 max-w-xl">
+              {/* Description */}
+
+              <p className="text-sm md:text-base text-gray-400 mt-2 max-w-xl leading-relaxed">
                 Jangan berhenti di ide. Mari belajar, berkolaborasi,
                 dan menciptakan sesuatu yang berdampak bersama HIMAUNTIKA.
               </p>
 
             </div>
-
 
             {/* CTA Button */}
 
@@ -108,14 +131,38 @@ export default function Footer() {
               whileTap={{
                 scale: 0.97,
               }}
-              className="group shrink-0 inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-semibold shadow-lg shadow-purple-600/20 transition-all duration-300"
+              className="
+                group
+                shrink-0
+                inline-flex
+                items-center
+                gap-3
+                px-6
+                py-3
+                rounded-xl
+                bg-purple-600
+                hover:bg-purple-500
+                text-white
+                font-semibold
+                shadow-lg
+                shadow-purple-600/20
+                transition-all
+                duration-300
+              "
             >
 
               <span>
                 Contact Us
               </span>
 
-              <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+              <ArrowUpRight
+                className="
+                  w-4 h-4
+                  group-hover:translate-x-1
+                  group-hover:-translate-y-1
+                  transition-transform
+                "
+              />
 
             </motion.a>
 
@@ -145,11 +192,47 @@ export default function Footer() {
 
             <div className="flex items-center gap-3 mb-5">
 
-              <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-purple-500 to-purple-800 flex items-center justify-center shadow-lg shadow-purple-500/20">
+              {/* =================================================
+                  LOGO HIMAUNTIKA
+                  Ganti file logo di:
+                  public/images/logo-himauntika.png
+              ================================================= */}
 
-                <Code2 className="w-6 h-6 text-white" />
+              <div
+                className="
+                  relative
+                  w-12
+                  h-12
+                  shrink-0
+                  rounded-xl
+                  bg-white/[0.03]
+                  border border-purple-500/20
+                  flex
+                  items-center
+                  justify-center
+                  overflow-hidden
+                  shadow-lg
+                  shadow-purple-500/20
+                  hover:border-purple-500/50
+                  hover:shadow-purple-500/30
+                  transition-all
+                  duration-300
+                "
+              >
+
+                <Image
+                  src="/images/himauntikaa.png"
+                  alt="Logo HIMAUNTIKA"
+                  fill
+                  sizes="48px"
+                  className="object-contain p-1.5"
+                  priority
+                />
 
               </div>
+
+
+              {/* Brand Text */}
 
               <div>
 
@@ -169,10 +252,12 @@ export default function Footer() {
             {/* Description */}
 
             <p className="text-sm leading-relaxed text-gray-400 max-w-md">
+
               Himpunan Mahasiswa Teknik Informatika Universitas Islam
               Syekh-Yusuf yang menjadi ruang bagi mahasiswa untuk belajar,
               berkembang, berkolaborasi, dan menciptakan inovasi di bidang
               teknologi.
+
             </p>
 
 
@@ -180,7 +265,7 @@ export default function Footer() {
 
             <div className="flex items-center gap-2 mt-6 text-sm text-gray-500">
 
-              <MapPin className="w-4 h-4 text-purple-400" />
+              <MapPin className="w-4 h-4 text-purple-400 shrink-0" />
 
               <span>
                 Universitas Islam Syekh-Yusuf, Tangerang
@@ -193,6 +278,7 @@ export default function Footer() {
 
             <div className="flex items-center gap-3 mt-7">
 
+
               {/* Instagram */}
 
               <motion.a
@@ -203,7 +289,24 @@ export default function Footer() {
                   y: -4,
                   scale: 1.05,
                 }}
-                className="w-10 h-10 rounded-xl border border-white/10 bg-white/[0.03] flex items-center justify-center hover:border-purple-500/50 hover:bg-purple-500/10 hover:text-purple-400 transition-all duration-300"
+                whileTap={{
+                  scale: 0.95,
+                }}
+                className="
+                  w-10
+                  h-10
+                  rounded-xl
+                  border border-white/10
+                  bg-white/[0.03]
+                  flex
+                  items-center
+                  justify-center
+                  hover:border-purple-500/50
+                  hover:bg-purple-500/10
+                  hover:text-purple-400
+                  transition-all
+                  duration-300
+                "
                 aria-label="Instagram HIMAUNTIKA"
               >
 
@@ -222,7 +325,24 @@ export default function Footer() {
                   y: -4,
                   scale: 1.05,
                 }}
-                className="w-10 h-10 rounded-xl border border-white/10 bg-white/[0.03] flex items-center justify-center hover:border-purple-500/50 hover:bg-purple-500/10 hover:text-purple-400 transition-all duration-300"
+                whileTap={{
+                  scale: 0.95,
+                }}
+                className="
+                  w-10
+                  h-10
+                  rounded-xl
+                  border border-white/10
+                  bg-white/[0.03]
+                  flex
+                  items-center
+                  justify-center
+                  hover:border-purple-500/50
+                  hover:bg-purple-500/10
+                  hover:text-purple-400
+                  transition-all
+                  duration-300
+                "
                 aria-label="TikTok HIMAUNTIKA"
               >
 
@@ -239,7 +359,24 @@ export default function Footer() {
                   y: -4,
                   scale: 1.05,
                 }}
-                className="w-10 h-10 rounded-xl border border-white/10 bg-white/[0.03] flex items-center justify-center hover:border-purple-500/50 hover:bg-purple-500/10 hover:text-purple-400 transition-all duration-300"
+                whileTap={{
+                  scale: 0.95,
+                }}
+                className="
+                  w-10
+                  h-10
+                  rounded-xl
+                  border border-white/10
+                  bg-white/[0.03]
+                  flex
+                  items-center
+                  justify-center
+                  hover:border-purple-500/50
+                  hover:bg-purple-500/10
+                  hover:text-purple-400
+                  transition-all
+                  duration-300
+                "
                 aria-label="Email HIMAUNTIKA"
               >
 
@@ -264,75 +401,202 @@ export default function Footer() {
 
             <div className="flex flex-col gap-3">
 
+
+              {/* Home */}
+
               <a
                 href="#home"
-                className="group flex items-center gap-2 text-sm text-gray-500 hover:text-purple-400 transition-colors"
+                className="
+                  group
+                  flex
+                  items-center
+                  gap-2
+                  text-sm
+                  text-gray-500
+                  hover:text-purple-400
+                  transition-colors
+                "
               >
+
                 <span>
                   Home
                 </span>
 
-                <ArrowUpRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <ArrowUpRight
+                  className="
+                    w-3.5
+                    h-3.5
+                    opacity-0
+                    group-hover:opacity-100
+                    transition-opacity
+                  "
+                />
+
               </a>
 
 
+              {/* Modul */}
+
               <a
                 href="#modules"
-                className="group flex items-center gap-2 text-sm text-gray-500 hover:text-purple-400 transition-colors"
+                className="
+                  group
+                  flex
+                  items-center
+                  gap-2
+                  text-sm
+                  text-gray-500
+                  hover:text-purple-400
+                  transition-colors
+                "
               >
+
                 <span>
                   Modul Pembelajaran
                 </span>
 
-                <ArrowUpRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <ArrowUpRight
+                  className="
+                    w-3.5
+                    h-3.5
+                    opacity-0
+                    group-hover:opacity-100
+                    transition-opacity
+                  "
+                />
+
               </a>
 
 
+              {/* Project */}
+
               <a
                 href="#projekan"
-                className="group flex items-center gap-2 text-sm text-gray-500 hover:text-purple-400 transition-colors"
+                className="
+                  group
+                  flex
+                  items-center
+                  gap-2
+                  text-sm
+                  text-gray-500
+                  hover:text-purple-400
+                  transition-colors
+                "
               >
+
                 <span>
                   Project Showcase
                 </span>
 
-                <ArrowUpRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <ArrowUpRight
+                  className="
+                    w-3.5
+                    h-3.5
+                    opacity-0
+                    group-hover:opacity-100
+                    transition-opacity
+                  "
+                />
+
               </a>
 
 
+              {/* Events */}
+
               <a
                 href="#events"
-                className="group flex items-center gap-2 text-sm text-gray-500 hover:text-purple-400 transition-colors"
+                className="
+                  group
+                  flex
+                  items-center
+                  gap-2
+                  text-sm
+                  text-gray-500
+                  hover:text-purple-400
+                  transition-colors
+                "
               >
+
                 <span>
                   Events & Activities
                 </span>
 
-                <ArrowUpRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <ArrowUpRight
+                  className="
+                    w-3.5
+                    h-3.5
+                    opacity-0
+                    group-hover:opacity-100
+                    transition-opacity
+                  "
+                />
+
               </a>
 
 
+              {/* Organization */}
+
               <a
                 href="#struktural"
-                className="group flex items-center gap-2 text-sm text-gray-500 hover:text-purple-400 transition-colors"
+                className="
+                  group
+                  flex
+                  items-center
+                  gap-2
+                  text-sm
+                  text-gray-500
+                  hover:text-purple-400
+                  transition-colors
+                "
               >
+
                 <span>
                   Organization
                 </span>
 
-                <ArrowUpRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <ArrowUpRight
+                  className="
+                    w-3.5
+                    h-3.5
+                    opacity-0
+                    group-hover:opacity-100
+                    transition-opacity
+                  "
+                />
+
               </a>
 
 
+              {/* Vision */}
+
               <a
                 href="#visi-misi"
-                className="group flex items-center gap-2 text-sm text-gray-500 hover:text-purple-400 transition-colors"
+                className="
+                  group
+                  flex
+                  items-center
+                  gap-2
+                  text-sm
+                  text-gray-500
+                  hover:text-purple-400
+                  transition-colors
+                "
               >
+
                 <span>
                   Vision & Mission
                 </span>
 
-                <ArrowUpRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <ArrowUpRight
+                  className="
+                    w-3.5
+                    h-3.5
+                    opacity-0
+                    group-hover:opacity-100
+                    transition-opacity
+                  "
+                />
+
               </a>
 
             </div>
@@ -353,7 +617,8 @@ export default function Footer() {
 
             <div className="space-y-4">
 
-              {/* Join */}
+
+              {/* Join HIMAUNTIKA */}
 
               <a
                 href="#join"
@@ -362,7 +627,19 @@ export default function Footer() {
 
                 <div className="flex items-center gap-3">
 
-                  <div className="w-8 h-8 rounded-lg bg-purple-500/10 flex items-center justify-center group-hover:bg-purple-500/20 transition">
+                  <div
+                    className="
+                      w-8
+                      h-8
+                      rounded-lg
+                      bg-purple-500/10
+                      flex
+                      items-center
+                      justify-center
+                      group-hover:bg-purple-500/20
+                      transition
+                    "
+                  >
 
                     <Sparkles className="w-4 h-4 text-purple-400" />
 
@@ -394,7 +671,19 @@ export default function Footer() {
 
                 <div className="flex items-center gap-3">
 
-                  <div className="w-8 h-8 rounded-lg bg-purple-500/10 flex items-center justify-center group-hover:bg-purple-500/20 transition">
+                  <div
+                    className="
+                      w-8
+                      h-8
+                      rounded-lg
+                      bg-purple-500/10
+                      flex
+                      items-center
+                      justify-center
+                      group-hover:bg-purple-500/20
+                      transition
+                    "
+                  >
 
                     <Mail className="w-4 h-4 text-purple-400" />
 
@@ -421,7 +710,17 @@ export default function Footer() {
 
               <div className="flex items-center gap-3">
 
-                <div className="w-8 h-8 rounded-lg bg-purple-500/10 flex items-center justify-center">
+                <div
+                  className="
+                    w-8
+                    h-8
+                    rounded-lg
+                    bg-purple-500/10
+                    flex
+                    items-center
+                    justify-center
+                  "
+                >
 
                   <Code2 className="w-4 h-4 text-purple-400" />
 
@@ -456,9 +755,29 @@ export default function Footer() {
 
           <div className="h-px bg-gradient-to-r from-transparent via-purple-500/20 to-transparent" />
 
-          <div className="absolute left-1/2 -translate-x-1/2 -top-2 px-4 bg-black">
+          <div
+            className="
+              absolute
+              left-1/2
+              -translate-x-1/2
+              -top-2
+              px-4
+              bg-black
+            "
+          >
 
-            <div className="w-4 h-4 rounded-full border border-purple-500/30 bg-purple-500/10 flex items-center justify-center">
+            <div
+              className="
+                w-4
+                h-4
+                rounded-full
+                border border-purple-500/30
+                bg-purple-500/10
+                flex
+                items-center
+                justify-center
+              "
+            >
 
               <div className="w-1.5 h-1.5 rounded-full bg-purple-400 animate-pulse" />
 
@@ -475,11 +794,14 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-5">
 
+
           {/* Copyright */}
 
           <p className="text-xs text-gray-600 text-center md:text-left">
+
             © {currentYear} HIMAUNTIKA — Universitas Islam Syekh-Yusuf.
             All rights reserved.
+
           </p>
 
 
@@ -491,7 +813,9 @@ export default function Footer() {
               Built with
             </span>
 
-            <Heart className="w-3.5 h-3.5 text-purple-400 fill-purple-400" />
+            <Heart
+              className="w-3.5 h-3.5 text-purple-400 fill-purple-400"
+            />
 
             <span>
               by HIMAUNTIKA
@@ -510,14 +834,37 @@ export default function Footer() {
             whileTap={{
               scale: 0.95,
             }}
-            className="group flex items-center gap-2 text-xs text-gray-500 hover:text-purple-400 transition-colors"
+            className="
+              group
+              flex
+              items-center
+              gap-2
+              text-xs
+              text-gray-500
+              hover:text-purple-400
+              transition-colors
+            "
           >
 
             <span>
               Back to top
             </span>
 
-            <div className="w-8 h-8 rounded-lg border border-white/10 bg-white/[0.03] flex items-center justify-center group-hover:border-purple-500/40 group-hover:bg-purple-500/10 transition-all">
+            <div
+              className="
+                w-8
+                h-8
+                rounded-lg
+                border border-white/10
+                bg-white/[0.03]
+                flex
+                items-center
+                justify-center
+                group-hover:border-purple-500/40
+                group-hover:bg-purple-500/10
+                transition-all
+              "
+            >
 
               <ArrowUp className="w-4 h-4" />
 

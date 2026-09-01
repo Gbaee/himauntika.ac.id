@@ -388,7 +388,7 @@ export default function HimauntikaPage() {
       name: "Esai Septiana",
       img: "/images/esaii.JPG",
     },
-    { role: "Bendahara", name: "Layyinatus Syifa", img: "/images/sipa.JPG" },
+    { role: "Bendahara", name: "Layyinatus Syifa", img: "/images/layyinatus.jpeg" },
     { role: "Koor Umum", name: "Agus Nugrohojati", img: "/images/agus.jpg" },
   ];
 
@@ -412,7 +412,7 @@ export default function HimauntikaPage() {
       {
         role: "Anggota",
         name: "Muhammad Azwan W. M.",
-        img: "/images/azwan.jpg",
+        img: "/images/azwan.jpeg",
       },{
         role: "Anggota",
         name: "Dafa Raihan Dwi Aditiya",
@@ -500,7 +500,7 @@ export default function HimauntikaPage() {
       {
         role: "Anggota",
         name: "Siti Nuraeny",
-        img: "/images/nuraeny.jpg",
+        img: "/images/Siti Nuraeny.jpg",
       },
       {
         role: "Anggota",
@@ -524,7 +524,7 @@ export default function HimauntikaPage() {
       {
         role: "Anggota",
         name: "Muhammad Azriel Fachrial",
-        img: "/images/azril.jpg",
+        img: "/images/azril.jpeg",
       },
       {
         role: "Anggota",
@@ -539,7 +539,7 @@ export default function HimauntikaPage() {
       {
         role: "Anggota",
         name: "Najwa Syifa Aulia",
-        img: "/images/najwa.jpg",
+        img: "/images/syifa.jpg",
       },
       {
         role: "Anggota",
@@ -576,7 +576,7 @@ export default function HimauntikaPage() {
       {
         role: "Anggota",
         name: "Al-ghifari Desdi Akbar Manurung",
-        img: "/images/rulie.jpg",
+        img: "/images/desdi.jpg",
       },
     ],
   };
