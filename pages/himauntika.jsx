@@ -403,25 +403,25 @@ export default function HimauntikaPage() {
       },
       {
         role: "Anggota",
-        name: "syahdan",
+        name: "Syahdan Pratama",
         img: "/images/syahdan.jpg",
       },
       {
         role: "Anggota",
-        name: "bayu",
+        name: "Muhammad Bayu Prawira",
         img: "/images/bayu.jpg",
       },
       {
         role: "Anggota",
-        name: "azwan",
+        name: "Muhammad Azwan W. M.",
         img: "/images/azwan.jpg",
       },{
         role: "Anggota",
-        name: "1",
-        img: "/images/1.jpg",
+        name: "Dafa Raihan Dwi Aditiya",
+        img: "/images/dafa.jpg",
       },{
         role: "Anggota",
-        name: "2",
+        name: "Pragita Fernanda",
         img: "/images/2.jpg",
       },
       { role: "Anggota", name: "Wanda Sofiah", img: "/images/wanda.jpg" },
@@ -444,6 +444,11 @@ export default function HimauntikaPage() {
         role: "Anggota",
         name: "Wardah Hamidah",
         img: "/images/wardah.jpg",
+      },
+      {
+        role: "Anggota",
+        name: "Bunga Qomarun Nisa",
+        img: "/images/bunga.jpg",
       },
     ],
     kaderisasi: [
