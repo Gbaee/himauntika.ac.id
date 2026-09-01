@@ -6,7 +6,6 @@ import Image from "next/image";
 import { Sparkles, Target } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import TimelineWrapper from "@/components/ui/TimelineWrapper";
 import HomeSection from "@/components/ui/HomeSection";
 import MotivasiSection from "@/components/ui/MotivasiSection";
 import StatsSection from "@/components/ui/StatsSection";
@@ -17,7 +16,6 @@ import EventActivities from "@/components/ui/EventActivities";
 import JoinCTASection from "@/components/ui/JoinCTASection";
 import Footer from "@/components/ui/Footer";
 import GallerySection from "@/components/ui/GallerySection";
-import TipeOrangSection from "@/components/ui/TipeOrangSection";
 
 // Komponen Visi & Misi
 function VisiMisiSection() {
